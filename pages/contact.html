@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Legacy Care Africa | Book a Consultation</title>
+  <meta name="description" content="Get in touch with Legacy Care Africa to book a consultation, request home care, inquire about our subsidiaries, or connect with our team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <style>
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: var(--space-12);
+    }
+
+    .form-success.visible {
+      display: block;
+    }
+
+    .success-icon {
+      font-size: 3rem;
+      margin-bottom: var(--space-4);
+    }
+
+    .map-placeholder {
+      background: var(--color-surface-offset);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-12);
+      text-align: center;
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+
+    .office-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-8);
+    }
+
+    .office-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+    }
+
+    .office-flag {
+      font-size: 1.8rem;
+      margin-bottom: var(--space-3);
+      display: block;
+    }
+
+    .office-city {
+      font-family: var(--font-display);
+      font-size: var(--text-lg);
+      font-style: italic;
+      margin-bottom: var(--space-1);
+    }
+
+    .office-details {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="../index.html" class="nav-logo" aria-label="Legacy Care Africa home">
+        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+          <rect width="38" height="38" rx="10" fill="var(--color-primary)"/>
+          <path d="M16 19H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <path d="M19 16V22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="nav-logo-text">
+          <span class="nav-logo-name">Legacy Care Africa</span>
+          <span class="nav-logo-sub">Healthcare Group</span>
+        </span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="has-dropdown">
+          <a href="#" aria-haspopup="true">Our Companies ▾</a>
+          <div class="nav-dropdown">
+            <a href="uzazi.html"><span class="dropdown-icon">🌿</span> Uzazi Wellness Care</a>
+            <a href="nyumbani.html"><span class="dropdown-icon">🏠</span> Nyumbani Support Solutions</a>
+          </div>
+        </li>
+        <li><a href="blog.html">Wellness Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <button class="mobile-nav-close btn btn--ghost" style="align-self:flex-end;" aria-label="Close menu">✕ Close</button>
+  <a href="../index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="uzazi.html" class="mobile-nav-sub">🌿 Uzazi Wellness Care</a>
+  <a href="nyumbani.html" class="mobile-nav-sub">🏠 Nyumbani Support Solutions</a>
+  <a href="blog.html">Wellness Blog</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main id="main">
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-labelledby="contact-heading">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="../index.html">Home</a></li>
+      <li aria-current="page">Contact</li>
+    </ol>
+    <div class="page-hero-eyebrow">Reach Out</div>
+    <h1 id="contact-heading" class="page-hero-title">Let's start a conversation about your care.</h1>
+    <p class="page-hero-lead">Whether you're planning a birth, coordinating care for a family member, or simply curious — we're here to listen. No obligation, no pressure. Just honest guidance from people who care.</p>
+  </div>
+</section>
+
+<!-- CONTACT GRID -->
+<section class="section" aria-labelledby="contact-form-heading">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Left: contact info -->
+      <div class="contact-info">
+        <h2 id="contact-form-heading" class="section-title">Talk to our care team</h2>
+        <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.7;margin-bottom:var(--space-6);">Our care coordinators are real people — not chatbots. We respond to all inquiries within 4 business hours, and for urgent care needs, we're available 24/7 by phone.</p>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">📍</div>
+          <div>
+            <div class="contact-label">Main Office</div>
+            <div class="contact-value">Westlands Business Park<br>Nairobi, Kenya</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">📞</div>
+          <div>
+            <div class="contact-label">Main Line</div>
+            <div class="contact-value"><a href="tel:+254700000000">+254 700 000 000</a></div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">🏥</div>
+          <div>
+            <div class="contact-label">Nyumbani 24/7 Care Line</div>
+            <div class="contact-value"><a href="tel:+254700000002">+254 700 000 002</a></div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">📧</div>
+          <div>
+            <div class="contact-label">General Inquiries</div>
+            <div class="contact-value"><a href="mailto:info@legacycareafrica.com">info@legacycareafrica.com</a></div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">⏰</div>
+          <div>
+            <div class="contact-label">Office Hours</div>
+            <div class="contact-value">Mon – Fri: 8:00 AM – 6:00 PM EAT<br>Sat: 9:00 AM – 2:00 PM EAT</div>
+          </div>
+        </div>
+
+        <div style="margin-top: var(--space-8); padding: var(--space-5); background: var(--color-primary-highlight); border-radius: var(--radius-xl); border: 1px solid var(--color-primary);">
+          <p style="font-size:var(--text-sm);color:var(--color-primary);font-weight:600;margin-bottom:var(--space-2);">🌍 Diaspora Families</p>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;">Arranging care for a family member in Kenya from abroad? We specialize in diaspora care coordination. WhatsApp us directly for faster response: <a href="https://wa.me/254700000000" target="_blank" rel="noopener">+254 700 000 000</a></p>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div>
+        <div class="form-wrap">
+          <h3 style="font-family:var(--font-display);font-size:var(--text-xl);font-style:italic;margin-bottom:var(--space-2);">Book a Consultation</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-6);">Fill in the form and a care coordinator will contact you within 4 hours to schedule your consultation.</p>
+
+          <form class="contact-form" novalidate aria-label="Book a consultation form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="first-name">First Name <span aria-hidden="true" style="color:var(--color-accent)">*</span></label>
+                <input class="form-input" type="text" id="first-name" name="first_name" autocomplete="given-name" required placeholder="Amina">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last-name">Last Name <span aria-hidden="true" style="color:var(--color-accent)">*</span></label>
+                <input class="form-input" type="text" id="last-name" name="last_name" autocomplete="family-name" required placeholder="Mwangi">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address <span aria-hidden="true" style="color:var(--color-accent)">*</span></label>
+                <input class="form-input" type="email" id="email" name="email" autocomplete="email" required placeholder="amina@example.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone / WhatsApp</label>
+                <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+254 700 000 000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="location">Your Location</label>
+              <input class="form-input" type="text" id="location" name="location" placeholder="Nairobi, Mombasa, or abroad...">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="service">Which service are you interested in? <span aria-hidden="true" style="color:var(--color-accent)">*</span></label>
+              <select class="form-select" id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <optgroup label="Uzazi Wellness Care">
+                  <option value="prenatal">Prenatal Care</option>
+                  <option value="homebirth">Home Birth Support</option>
+                  <option value="postpartum">Postpartum Wellness</option>
+                  <option value="birthclass">Birth Classes</option>
+                  <option value="perinatal_mh">Perinatal Mental Health</option>
+                </optgroup>
+                <optgroup label="Nyumbani Support Solutions">
+                  <option value="home_nursing">Home Nursing Care</option>
+                  <option value="elder_care">Elder Care</option>
+                  <option value="post_surgical">Post-Surgical Recovery</option>
+                  <option value="equipment">Medical Equipment Rental</option>
+                  <option value="chronic">Chronic Disease Management</option>
+                  <option value="palliative">Palliative Care</option>
+                </optgroup>
+                <option value="other">Other / General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="preferred-contact">Preferred Contact Method</label>
+              <select class="form-select" id="preferred-contact" name="preferred_contact">
+                <option value="phone">Phone Call</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="email">Email</option>
+                <option value="video">Video Call (Zoom/Meet)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Tell us about your situation</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Share as much or as little as you're comfortable with. The more context you give us, the better we can prepare for our conversation."></textarea>
+            </div>
+
+            <div class="form-group" style="flex-direction:row;align-items:flex-start;gap:var(--space-3);">
+              <input type="checkbox" id="consent" name="consent" required style="width:16px;height:16px;margin-top:3px;flex-shrink:0;">
+              <label for="consent" style="font-size:var(--text-xs);color:var(--color-text-muted);line-height:1.6;">I agree to Legacy Care Africa using my information to contact me about my care inquiry. We never share your data with third parties. <a href="#" style="color:var(--color-primary);">Privacy Policy</a>.</label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;margin-top:var(--space-2);">Send Message &amp; Request Consultation</button>
+          </form>
+
+          <div class="form-success" id="form-success">
+            <div class="success-icon">✅</div>
+            <h3 style="font-family:var(--font-display);font-style:italic;font-size:var(--text-xl);margin-bottom:var(--space-3);">Message received</h3>
+            <p style="color:var(--color-text-muted);">A Legacy Care Africa care coordinator will reach out within 4 hours. We're looking forward to speaking with you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICES -->
+<section class="section" style="background: var(--color-surface-offset);" aria-labelledby="offices-heading">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="eyebrow">Where We Are</span>
+      <h2 id="offices-heading" class="section-title">Find us across East Africa</h2>
+    </div>
+    <div class="office-cards">
+      <div class="office-card" data-animate>
+        <span class="office-flag" aria-hidden="true">🇰🇪</span>
+        <h3 class="office-city">Nairobi</h3>
+        <p class="office-details">Westlands Business Park, Nairobi<br><strong>Main Office</strong><br>+254 700 000 000<br>info@legacycareafrica.com</p>
+      </div>
+      <div class="office-card" data-animate>
+        <span class="office-flag" aria-hidden="true">🇰🇪</span>
+        <h3 class="office-city">Mombasa</h3>
+        <p class="office-details">Tudor, Mombasa County<br><strong>Coastal Office</strong><br>+254 700 000 003<br>mombasa@legacycareafrica.com</p>
+      </div>
+      <div class="office-card" data-animate>
+        <span class="office-flag" aria-hidden="true">🇰🇪</span>
+        <h3 class="office-city">Kisumu</h3>
+        <p class="office-details">Milimani, Kisumu<br><strong>Western Kenya Office</strong><br>+254 700 000 004<br>kisumu@legacycareafrica.com</p>
+      </div>
+      <div class="office-card" data-animate>
+        <span class="office-flag" aria-hidden="true">🌍</span>
+        <h3 class="office-city">Diaspora Coordination</h3>
+        <p class="office-details">Serving families worldwide arranging care for relatives in Kenya.<br><strong>WhatsApp Only</strong><br>+254 700 000 000<br>diaspora@legacycareafrica.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" aria-labelledby="contact-faq-heading">
+  <div class="container container--narrow">
+    <div class="section-header section-header--center">
+      <span class="eyebrow">Quick Answers</span>
+      <h2 id="contact-faq-heading" class="section-title">Before you reach out</h2>
+    </div>
+    <div class="accordion-list">
+      <div class="accordion-item">
+        <button class="accordion-btn" aria-expanded="false">
+          How quickly can care start after I reach out?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body">For urgent Nyumbani home care requests, we aim to have a nurse at your location within 24 hours. For Uzazi prenatal care, we schedule first appointments within 48–72 hours of your inquiry. Urgent medical situations — call the 24/7 line directly.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-btn" aria-expanded="false">
+          Is the initial consultation free?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body">Yes. Your first telephone or video consultation with our care team is always complimentary. For Nyumbani, the home assessment visit is also free. We believe you should know exactly what you're getting before any financial commitment.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-btn" aria-expanded="false">
+          I'm calling on behalf of a family member — can I arrange care for them?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body">Absolutely. We work with family representatives all the time — adult children arranging care for parents, diaspora families coordinating for relatives at home, spouses and partners coordinating maternal care. We'll work with whoever is coordinating care on behalf of the patient.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-btn" aria-expanded="false">
+          What languages do your care teams speak?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body">Our care teams are fluent in English and Swahili. We also have team members who speak Kikuyu, Luo, Luhya, Kalenjin, and Arabic. Language should never be a barrier to care — let us know your preference when you book.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo" style="margin-bottom:var(--space-3);">
+          <svg width="32" height="32" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+            <rect width="38" height="38" rx="10" fill="var(--color-primary)"/>
+            <path d="M16 19H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M19 16V22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="nav-logo-text"><span class="nav-logo-name">Legacy Care Africa</span></span>
+        </a>
+        <p>Pan-African healthcare rooted in community and compassion.</p>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Company</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Wellness Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Our Companies</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="uzazi.html">Uzazi Wellness Care</a></li>
+          <li><a href="nyumbani.html">Nyumbani Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Emergency</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="tel:+254700000002">24/7 Nyumbani Care: +254 700 000 002</a></li>
+          <li><a href="https://wa.me/254700000000">WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Legacy Care Africa Group. All rights reserved.</span>
+      <div style="display:flex;gap:var(--space-4);">
+        <a href="#" style="color:var(--color-text-faint);font-size:var(--text-xs);">Privacy Policy</a>
+        <a href="#" style="color:var(--color-text-faint);font-size:var(--text-xs);">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  // Enhanced contact form handling
+  const form = document.querySelector('.contact-form');
+  const successDiv = document.getElementById('form-success');
+  if (form) {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = form.querySelector('[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      setTimeout(() => {
+        form.style.display = 'none';
+        successDiv.classList.add('visible');
+      }, 1200);
+    });
+  }
+</script>
+</body>
+</html>

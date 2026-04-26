@@ -1,0 +1,165 @@
+/* ============================================
+   LEGACY CARE AFRICA — Design Tokens
+   Palette: African Wellness — warm terracotta,
+   deep savanna green, ivory + rich mahogany
+   ============================================ */
+
+:root,
+[data-theme='light'] {
+  /* ---- Surfaces ---- */
+  --color-bg: #f8f5f0;           /* warm ivory parchment */
+  --color-surface: #faf8f4;
+  --color-surface-2: #fdfcfa;
+  --color-surface-offset: #f1ece3;
+  --color-surface-offset-2: #e9e2d8;
+  --color-surface-dynamic: #dfd7c9;
+  --color-divider: #d6cec0;
+  --color-border: #c8bfae;
+
+  /* ---- Text ---- */
+  --color-text: #1e1a13;
+  --color-text-muted: #6b6152;
+  --color-text-faint: #b0a593;
+  --color-text-inverse: #faf8f4;
+
+  /* ---- Primary: Savanna Deep Green ---- */
+  --color-primary: #2d6a4f;
+  --color-primary-hover: #1f5239;
+  --color-primary-active: #143724;
+  --color-primary-highlight: #c9dfd3;
+
+  /* ---- Accent: Terracotta ---- */
+  --color-accent: #c25e3a;
+  --color-accent-hover: #9e4929;
+  --color-accent-active: #7a3318;
+  --color-accent-highlight: #f0d5c8;
+
+  /* ---- Gold: Baobab Amber ---- */
+  --color-gold: #c9860a;
+  --color-gold-hover: #a86c06;
+  --color-gold-active: #7e5003;
+  --color-gold-highlight: #f2e2c0;
+
+  /* ---- Success / Warning / Error ---- */
+  --color-success: #437a22;
+  --color-warning: #b07020;
+  --color-error: #a12c2c;
+
+  /* ---- Border Radius ---- */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ---- Transitions ---- */
+  --transition-interactive: 200ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ---- Shadows (warm-toned) ---- */
+  --shadow-sm: 0 1px 2px rgba(30, 15, 5, 0.06);
+  --shadow-md: 0 4px 14px rgba(30, 15, 5, 0.09);
+  --shadow-lg: 0 12px 36px rgba(30, 15, 5, 0.13);
+  --shadow-xl: 0 24px 60px rgba(30, 15, 5, 0.16);
+
+  /* ---- Content widths ---- */
+  --content-narrow: 640px;
+  --content-default: 960px;
+  --content-wide: 1180px;
+  --content-full: 100%;
+
+  /* ---- Type Scale ---- */
+  --text-xs:   clamp(0.75rem,  0.7rem + 0.25vw,  0.875rem);
+  --text-sm:   clamp(0.875rem, 0.8rem + 0.35vw,  1rem);
+  --text-base: clamp(1rem,     0.95rem + 0.25vw, 1.125rem);
+  --text-lg:   clamp(1.125rem, 1rem + 0.6vw,     1.5rem);
+  --text-xl:   clamp(1.5rem,   1.2rem + 1.25vw,  2.25rem);
+  --text-2xl:  clamp(2rem,     1.2rem + 2.5vw,   3.5rem);
+  --text-3xl:  clamp(2.5rem,   1rem + 4vw,       5rem);
+  --text-hero: clamp(3rem,     0.5rem + 7vw,     7.5rem);
+
+  /* ---- Spacing ---- */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ---- Fonts ---- */
+  --font-display: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', 'Inter', 'Helvetica Neue', sans-serif;
+}
+
+/* ---- DARK MODE ---- */
+[data-theme='dark'],
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --color-bg: #151210;
+    --color-surface: #1a1713;
+    --color-surface-2: #1e1b16;
+    --color-surface-offset: #19160f;
+    --color-surface-offset-2: #201c14;
+    --color-surface-dynamic: #2a2518;
+    --color-divider: #242018;
+    --color-border: #352f22;
+    --color-text: #ede8df;
+    --color-text-muted: #8a8070;
+    --color-text-faint: #5a5244;
+    --color-text-inverse: #1a1713;
+    --color-primary: #52a67e;
+    --color-primary-hover: #3a8c66;
+    --color-primary-active: #26704e;
+    --color-primary-highlight: #1e3329;
+    --color-accent: #e07c55;
+    --color-accent-hover: #ca6540;
+    --color-accent-active: #a84e2c;
+    --color-accent-highlight: #3d1f12;
+    --color-gold: #e8a830;
+    --color-gold-hover: #d4901a;
+    --color-gold-active: #b67208;
+    --color-gold-highlight: #362503;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.25);
+    --shadow-md: 0 4px 14px rgba(0,0,0,0.35);
+    --shadow-lg: 0 12px 36px rgba(0,0,0,0.45);
+    --shadow-xl: 0 24px 60px rgba(0,0,0,0.55);
+  }
+}
+
+[data-theme='dark'] {
+  --color-bg: #151210;
+  --color-surface: #1a1713;
+  --color-surface-2: #1e1b16;
+  --color-surface-offset: #19160f;
+  --color-surface-offset-2: #201c14;
+  --color-surface-dynamic: #2a2518;
+  --color-divider: #242018;
+  --color-border: #352f22;
+  --color-text: #ede8df;
+  --color-text-muted: #8a8070;
+  --color-text-faint: #5a5244;
+  --color-text-inverse: #1a1713;
+  --color-primary: #52a67e;
+  --color-primary-hover: #3a8c66;
+  --color-primary-active: #26704e;
+  --color-primary-highlight: #1e3329;
+  --color-accent: #e07c55;
+  --color-accent-hover: #ca6540;
+  --color-accent-active: #a84e2c;
+  --color-accent-highlight: #3d1f12;
+  --color-gold: #e8a830;
+  --color-gold-hover: #d4901a;
+  --color-gold-active: #b67208;
+  --color-gold-highlight: #362503;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.25);
+  --shadow-md: 0 4px 14px rgba(0,0,0,0.35);
+  --shadow-lg: 0 12px 36px rgba(0,0,0,0.45);
+  --shadow-xl: 0 24px 60px rgba(0,0,0,0.55);
+}

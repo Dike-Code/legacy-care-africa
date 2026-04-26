@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uzazi Wellness Care — Maternal &amp; Birth Services | Legacy Care Africa</title>
+  <meta name="description" content="Uzazi Wellness Care offers compassionate maternal health services including prenatal care, midwife-led birth support, and postpartum wellness across East Africa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <style>
+    /* Uzazi brand accent: green */
+    :root { --page-accent: var(--color-primary); }
+
+    .uzazi-hero {
+      background: linear-gradient(135deg,
+        color-mix(in oklab, var(--color-primary), var(--color-bg) 80%) 0%,
+        var(--color-bg) 55%,
+        color-mix(in oklab, var(--color-gold), var(--color-bg) 90%) 100%
+      );
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .uzazi-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -20%;
+      right: -5%;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: color-mix(in oklab, var(--color-primary), transparent 95%);
+      pointer-events: none;
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-2xl);
+      overflow: hidden;
+    }
+
+    .process-step {
+      padding: var(--space-8);
+      position: relative;
+      border-right: 1px solid var(--color-divider);
+    }
+
+    .process-step:last-child { border-right: none; }
+
+    .step-number {
+      font-family: var(--font-display);
+      font-size: var(--text-3xl);
+      color: var(--color-primary);
+      opacity: 0.15;
+      line-height: 1;
+      display: block;
+      margin-bottom: var(--space-3);
+    }
+
+    .step-title {
+      font-family: var(--font-display);
+      font-size: var(--text-lg);
+      font-style: italic;
+      margin-bottom: var(--space-2);
+    }
+
+    .step-desc {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.65;
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(var(--space-8), 5vw, var(--space-14));
+      align-items: center;
+    }
+
+    .detail-image {
+      border-radius: var(--radius-2xl);
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      box-shadow: var(--shadow-xl);
+    }
+
+    .detail-image img { width: 100%; height: 100%; object-fit: cover; }
+
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+      margin-top: var(--space-5);
+    }
+
+    .checklist li {
+      display: flex;
+      gap: var(--space-3);
+      align-items: flex-start;
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+    }
+
+    .check-icon {
+      color: var(--color-primary);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    @media (max-width: 768px) {
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .process-step { border-right: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider); }
+      .detail-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .process-steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV (same as homepage) -->
+<header class="site-header" role="banner">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="../index.html" class="nav-logo" aria-label="Legacy Care Africa home">
+        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="38" height="38" rx="10" fill="var(--color-primary)"/>
+          <path d="M19 8C19 8 10 14 10 22C10 26.4 14.1 30 19 30C23.9 30 28 26.4 28 22C28 14 19 8 19 8Z" fill="rgba(255,255,255,0.18)"/>
+          <path d="M19 8C19 8 10 14 10 22C10 26.4 14.1 30 19 30" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M16 19H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <path d="M19 16V22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="nav-logo-text">
+          <span class="nav-logo-name">Legacy Care Africa</span>
+          <span class="nav-logo-sub">Healthcare Group</span>
+        </span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="has-dropdown">
+          <a href="#" aria-haspopup="true">Our Companies ▾</a>
+          <div class="nav-dropdown">
+            <a href="uzazi.html"><span class="dropdown-icon">🌿</span> Uzazi Wellness Care</a>
+            <a href="nyumbani.html"><span class="dropdown-icon">🏠</span> Nyumbani Support Solutions</a>
+          </div>
+        </li>
+        <li><a href="blog.html">Wellness Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
+        <a href="contact.html" class="btn btn--primary" style="font-size:var(--text-xs);">Book Consultation</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <button class="mobile-nav-close btn btn--ghost" style="align-self:flex-end;" aria-label="Close menu">✕ Close</button>
+  <a href="../index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="uzazi.html" class="mobile-nav-sub">🌿 Uzazi Wellness Care</a>
+  <a href="nyumbani.html" class="mobile-nav-sub">🏠 Nyumbani Support Solutions</a>
+  <a href="blog.html">Wellness Blog</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main id="main">
+
+<!-- BREADCRUMB -->
+<div style="background: var(--color-surface-offset); border-bottom: 1px solid var(--color-divider); padding: var(--space-3) 0;">
+  <div class="container">
+    <ol class="breadcrumb" aria-label="Breadcrumb">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">Our Companies</a></li>
+      <li aria-current="page">Uzazi Wellness Care</li>
+    </ol>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="uzazi-hero" aria-labelledby="uzazi-heading">
+  <div class="container">
+    <div class="detail-grid">
+      <div>
+        <div class="hero-eyebrow" style="background: var(--color-primary-highlight); color: var(--color-primary);">
+          🌿 Uzazi Wellness Care
+        </div>
+        <h1 id="uzazi-heading" class="hero-heading">
+          Where <strong>Birth</strong><br>Becomes Sacred Again
+        </h1>
+        <p class="hero-lead">Uzazi — the Swahili word for childbirth — is our commitment to restoring dignity, power, and joy to every birth journey. We are a maternal wellness company for African mothers, by African caregivers.</p>
+        <div class="hero-cta-group" style="margin-top: var(--space-6);">
+          <a href="contact.html" class="btn btn--primary btn--lg">Book Prenatal Consultation</a>
+          <a href="#services" class="btn btn--ghost btn--lg">View Services ↓</a>
+        </div>
+      </div>
+      <div class="detail-image" data-animate>
+        <img
+          src="https://images.unsplash.com/photo-1569839333583-7375336cde20?w=600&q=80&auto=format&fit=crop"
+          alt="African midwife placing hands gently on pregnant mother's belly"
+          loading="eager" width="600" height="750"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARE PHILOSOPHY -->
+<section class="section" aria-labelledby="philosophy-heading">
+  <div class="container container--narrow" style="text-align:center;">
+    <span class="eyebrow">Our Philosophy</span>
+    <h2 id="philosophy-heading" class="section-title" style="max-width:22ch;margin-inline:auto;">
+      Birth is not a medical event — it's a sacred passage
+    </h2>
+    <p style="font-size:var(--text-lg);color:var(--color-text-muted);line-height:1.75;max-width:58ch;margin:var(--space-5) auto var(--space-8);">
+      Modern medicine has saved countless lives — and we honor that. But birth has always been a spiritual, communal, and deeply feminine experience in African tradition. At Uzazi, we hold both truths: the clinical and the cultural. Your body knows how to birth. Our role is to support, protect, and celebrate every step.
+    </p>
+    <div class="values-grid" style="text-align:left;">
+      <div class="value-card">
+        <span class="value-icon">🤲</span>
+        <h3 class="value-title">Continuity of Care</h3>
+        <p class="value-desc">The same caregiver from your first appointment through your postpartum recovery.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">🌍</span>
+        <h3 class="value-title">Culturally Rooted</h3>
+        <p class="value-desc">We honor African birth traditions — language, ritual, family presence, and rest practices.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">🧠</span>
+        <h3 class="value-title">Trauma-Informed</h3>
+        <p class="value-desc">No patient is rushed, pressured, or dismissed. Your experience matters as much as the outcome.</p>
+      </div>
+      <div class="value-card">
+        <span class="value-icon">📋</span>
+        <h3 class="value-title">Evidence-Based</h3>
+        <p class="value-desc">Clinical best practices from WHO, ACOG, and regional maternal health research guide every protocol.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section" style="background: var(--color-surface-offset);" aria-labelledby="uzazi-services-heading">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="eyebrow">What We Offer</span>
+      <h2 id="uzazi-services-heading" class="section-title">Full-spectrum maternal wellness</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" style="--service-color:var(--color-primary);--service-bg:var(--color-primary-highlight);">
+        <div class="service-icon">🤱</div>
+        <h3 class="service-title">Prenatal Care Package</h3>
+        <p class="service-desc">12-week to 40-week pregnancy monitoring including ultrasound coordination, nutritional counseling, birth planning sessions, and weekly check-ins with your dedicated midwife.</p>
+      </div>
+      <div class="service-card" style="--service-color:var(--color-gold);--service-bg:var(--color-gold-highlight);">
+        <div class="service-icon">🏡</div>
+        <h3 class="service-title">Home Birth Support</h3>
+        <p class="service-desc">For low-risk pregnancies, Uzazi's certified midwives attend home births with full emergency equipment, creating a serene, family-centered birth space in your own home.</p>
+      </div>
+      <div class="service-card" style="--service-color:var(--color-accent);--service-bg:var(--color-accent-highlight);">
+        <div class="service-icon">🌸</div>
+        <h3 class="service-title">Postpartum Wellness</h3>
+        <p class="service-desc">40-day postpartum support including daily nurse visits, lactation guidance, pelvic floor physiotherapy, mental health screening, and new mother nutrition planning.</p>
+      </div>
+      <div class="service-card" style="--service-color:var(--color-primary);--service-bg:var(--color-primary-highlight);">
+        <div class="service-icon">👩‍⚕️</div>
+        <h3 class="service-title">Midwife-Led Birth Classes</h3>
+        <p class="service-desc">Group and private childbirth education classes covering breathing techniques, pain management, partner support, infant feeding, and newborn care essentials.</p>
+      </div>
+      <div class="service-card" style="--service-color:var(--color-gold);--service-bg:var(--color-gold-highlight);">
+        <div class="service-icon">💛</div>
+        <h3 class="service-title">Perinatal Mental Health</h3>
+        <p class="service-desc">Specialist support for anxiety, depression, and trauma during pregnancy and after birth. We screen every mother and ensure no one falls through the cracks.</p>
+      </div>
+      <div class="service-card" style="--service-color:var(--color-accent);--service-bg:var(--color-accent-highlight);">
+        <div class="service-icon">🍼</div>
+        <h3 class="service-title">Lactation &amp; Infant Feeding</h3>
+        <p class="service-desc">Certified lactation consultants offering in-home visits, troubleshooting, and culturally sensitive guidance for breastfeeding and combination-feeding mothers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARE JOURNEY PROCESS -->
+<section class="section" aria-labelledby="process-heading">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="eyebrow">Your Journey</span>
+      <h2 id="process-heading" class="section-title">What to expect with Uzazi</h2>
+    </div>
+    <div class="process-steps" data-animate>
+      <div class="process-step">
+        <span class="step-number" aria-hidden="true">01</span>
+        <h3 class="step-title">Initial Consultation</h3>
+        <p class="step-desc">A 60-minute welcome session to understand your health history, birth preferences, cultural needs, and goals for your pregnancy journey.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-number" aria-hidden="true">02</span>
+        <h3 class="step-title">Personalized Care Plan</h3>
+        <p class="step-desc">Your dedicated midwife creates a tailored birth plan that honors your wishes, your culture, and evidence-based safety guidelines.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-number" aria-hidden="true">03</span>
+        <h3 class="step-title">Continuous Support</h3>
+        <p class="step-desc">Regular check-ins, 24/7 on-call access to your care team, and monthly group wellness circles with other expectant mothers.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-number" aria-hidden="true">04</span>
+        <h3 class="step-title">Birth Day Care</h3>
+        <p class="step-desc">Your midwife attends your birth — at home, in a birth center, or at a hospital — providing continuous labor support and advocacy for your birth plan.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-number" aria-hidden="true">05</span>
+        <h3 class="step-title">Postpartum Recovery</h3>
+        <p class="step-desc">Daily home visits in the first 2 weeks, then weekly support through 40 days. Physical, emotional, and nutritional care for you and your newborn.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETAILED SERVICE: Postpartum -->
+<section class="section" style="background: var(--color-surface-offset);" aria-labelledby="postpartum-heading">
+  <div class="container">
+    <div class="detail-grid">
+      <div>
+        <span class="eyebrow">Postpartum Spotlight</span>
+        <h2 id="postpartum-heading" class="section-title">The fourth trimester deserves its own chapter</h2>
+        <p style="font-size:var(--text-base);color:var(--color-text-muted);line-height:1.75;margin:var(--space-4) 0;">
+          In many African traditions, a new mother rests for 40 days — fed, bathed, and honored by the women around her. Uzazi brings that sacred practice into the modern world. Our postpartum program is not an add-on. It is the center of our care philosophy.
+        </p>
+        <ul class="checklist" role="list">
+          <li><span class="check-icon">✓</span> Daily nursing visits for the first 14 days</li>
+          <li><span class="check-icon">✓</span> Lactation consultant on-call 7 days a week</li>
+          <li><span class="check-icon">✓</span> Pelvic floor physiotherapy assessment at 6 weeks</li>
+          <li><span class="check-icon">✓</span> Edinburgh Postnatal Depression Scale screening</li>
+          <li><span class="check-icon">✓</span> Newborn pediatric check-up coordination</li>
+          <li><span class="check-icon">✓</span> Partner & family support guidance sessions</li>
+        </ul>
+        <div style="margin-top: var(--space-6);">
+          <a href="contact.html" class="btn btn--primary btn--lg">Start Postpartum Care</a>
+        </div>
+      </div>
+      <div class="detail-image" data-animate>
+        <img
+          src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=80&auto=format&fit=crop"
+          alt="Mother resting peacefully with newborn baby"
+          loading="lazy" width="600" height="750"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ ACCORDION -->
+<section class="section" aria-labelledby="faq-heading">
+  <div class="container container--narrow">
+    <div class="section-header section-header--center">
+      <span class="eyebrow">Questions</span>
+      <h2 id="faq-heading" class="section-title">Frequently asked</h2>
+    </div>
+    <div class="accordion-list">
+      <div class="accordion-item">
+        <button class="accordion-btn" aria-expanded="false">
+          Is Uzazi only for low-risk pregnancies?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body">
+          No. While our home birth services require low-risk classification, our prenatal support, postpartum care, mental health services, and lactation consultancy are available to all mothers — including those with high-risk pregnancies who are supported by specialist obstetricians.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-btn" aria-expanded="false">
+          What is a doula, and does Uzazi provide doula services?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body">
+          A doula is a trained birth companion who provides emotional, physical, and informational support during labor and birth. Yes — Uzazi offers certified birth doula support as part of our birth day care package, and postpartum doulas for recovery support.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-btn" aria-expanded="false">
+          Can I use Uzazi if I'm planning a hospital birth?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body">
+          Absolutely. Our midwives and doulas accompany you to any hospital or birth center. We serve as your advocates and support team regardless of your birth setting. We also provide full prenatal and postpartum care whether your birth is at home, in a center, or a hospital.
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-btn" aria-expanded="false">
+          Does Uzazi accept insurance or NHIF?
+          <span class="accordion-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="accordion-body">
+          We are working to expand our NHIF and private insurance partnerships. Currently, we offer transparent package pricing and payment plans. Contact our care coordination team to discuss your financial options — we will never let cost be a barrier to your care.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" style="background: var(--color-surface-offset);" aria-labelledby="uzazi-testimonials-heading">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <span class="eyebrow">Patient Stories</span>
+      <h2 id="uzazi-testimonials-heading" class="section-title">Mothers who trusted us</h2>
+    </div>
+    <div class="testimonials-grid">
+      <article class="testimonial-card" data-animate>
+        <div class="testimonial-stars">★★★★★</div>
+        <span class="testimonial-quote" aria-hidden="true">"</span>
+        <p class="testimonial-text">My first birth was traumatic in a hospital — dismissed and rushed. With Uzazi, my second birth was transformative. I felt heard, honored, and powerful. I wish every woman could birth this way.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">N</div>
+          <div>
+            <div class="testimonial-name">Njeri M.</div>
+            <div class="testimonial-role">Second-time mother, Nairobi</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card" data-animate>
+        <div class="testimonial-stars">★★★★★</div>
+        <span class="testimonial-quote" aria-hidden="true">"</span>
+        <p class="testimonial-text">I struggled deeply with postpartum depression after my first child and nobody noticed. Uzazi screened me at my very first visit. Getting help early changed everything for me and my family.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">B</div>
+          <div>
+            <div class="testimonial-name">Beatrice A.</div>
+            <div class="testimonial-role">Postpartum wellness client, Kisumu</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card" data-animate>
+        <div class="testimonial-stars">★★★★★</div>
+        <span class="testimonial-quote" aria-hidden="true">"</span>
+        <p class="testimonial-text">The Uzazi midwife spoke to my mother-in-law in Swahili and explained everything. She became an ally, not a critic. That changed the entire energy of our home during my pregnancy.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">Z</div>
+          <div>
+            <div class="testimonial-name">Zara H.</div>
+            <div class="testimonial-role">Prenatal care client, Mombasa</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" aria-labelledby="uzazi-cta-heading">
+  <div class="container">
+    <div class="cta-banner" data-animate>
+      <p class="cta-banner-eyebrow">Begin Your Journey</p>
+      <h2 id="uzazi-cta-heading" class="cta-banner-title">Every mother deserves to birth with confidence</h2>
+      <p class="cta-banner-lead">Your first consultation with Uzazi Wellness Care is a conversation — no pressure, no forms, just you and your midwife. Let's plan your birth together.</p>
+      <a href="contact.html" class="btn btn--accent btn--lg">Schedule Your First Visit</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo" style="margin-bottom:var(--space-3);">
+          <svg width="32" height="32" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+            <rect width="38" height="38" rx="10" fill="var(--color-primary)"/>
+            <path d="M16 19H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M19 16V22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="nav-logo-text">
+            <span class="nav-logo-name">Legacy Care Africa</span>
+          </span>
+        </a>
+        <p>Pan-African healthcare rooted in community, compassion, and dignity.</p>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Uzazi Services</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="#services">Prenatal Care</a></li>
+          <li><a href="#services">Home Birth Support</a></li>
+          <li><a href="#services">Postpartum Wellness</a></li>
+          <li><a href="#services">Birth Classes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Legacy Care Group</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="../index.html">Homepage</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="nyumbani.html">Nyumbani Support</a></li>
+          <li><a href="blog.html">Wellness Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Connect</h3>
+        <ul class="footer-links" role="list">
+          <li><a href="contact.html">Book a Visit</a></li>
+          <li><a href="mailto:uzazi@legacycareafrica.com">uzazi@legacycareafrica.com</a></li>
+          <li><a href="tel:+254700000001">+254 700 000 001</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Uzazi Wellness Care — A Legacy Care Africa Subsidiary</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
