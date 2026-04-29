@@ -1,420 +1,880 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us — Legacy Care Africa | Our Story, Mission &amp; Leadership</title>
-  <meta name="description" content="Learn how Legacy Care Africa was founded — a pan-African healthcare group built to restore dignity, trust, and cultural resonance to healthcare across the continent.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/tokens.css">
-  <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/nav.css">
-  <link rel="stylesheet" href="../css/components.css">
-  <style>
-    .story-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: clamp(var(--space-10), 6vw, var(--space-16));
-      align-items: start;
-    }
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			About Us — Legacy Care Africa | Our Story, Mission &amp; Leadership
+		</title>
+		<meta
+			name="description"
+			content="Learn how Legacy Care Africa was founded — a pan-African healthcare group built to restore dignity, trust, and cultural resonance to healthcare across the continent."
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/tokens.css" />
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/nav.css" />
+		<link rel="stylesheet" href="../css/components.css" />
+		<style>
+			.story-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: clamp(var(--space-10), 6vw, var(--space-16));
+				align-items: start;
+			}
 
-    .story-image {
-      border-radius: var(--radius-2xl);
-      overflow: hidden;
-      box-shadow: var(--shadow-xl);
-      position: sticky;
-      top: 90px;
-    }
+			.story-image {
+				border-radius: var(--radius-2xl);
+				overflow: hidden;
+				box-shadow: var(--shadow-xl);
+				position: sticky;
+				top: 90px;
+			}
 
-    .story-image img { width: 100%; display: block; }
+			.story-image img {
+				width: 100%;
+				display: block;
+			}
 
-    .story-body {
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-6);
-    }
+			.story-body {
+				display: flex;
+				flex-direction: column;
+				gap: var(--space-6);
+			}
 
-    .story-body p {
-      font-size: var(--text-base);
-      color: var(--color-text-muted);
-      line-height: 1.8;
-    }
+			.story-body p {
+				font-size: var(--text-base);
+				color: var(--color-text-muted);
+				line-height: 1.8;
+			}
 
-    .pull-quote {
-      font-family: var(--font-display);
-      font-size: var(--text-xl);
-      font-style: italic;
-      color: var(--color-text);
-      border-left: 4px solid var(--color-accent);
-      padding-left: var(--space-6);
-      margin: var(--space-2) 0;
-      line-height: 1.5;
-    }
+			.pull-quote {
+				font-family: var(--font-display);
+				font-size: var(--text-xl);
+				font-style: italic;
+				color: var(--color-text);
+				border-left: 4px solid var(--color-accent);
+				padding-left: var(--space-6);
+				margin: var(--space-2) 0;
+				line-height: 1.5;
+			}
 
-    .timeline {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      position: relative;
-      padding-left: var(--space-10);
-    }
+			.timeline {
+				display: flex;
+				flex-direction: column;
+				gap: 0;
+				position: relative;
+				padding-left: var(--space-10);
+			}
 
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 10px;
-      top: 8px;
-      bottom: 8px;
-      width: 2px;
-      background: linear-gradient(to bottom, var(--color-primary), var(--color-accent));
-    }
+			.timeline::before {
+				content: "";
+				position: absolute;
+				left: 10px;
+				top: 8px;
+				bottom: 8px;
+				width: 2px;
+				background: linear-gradient(
+					to bottom,
+					var(--color-primary),
+					var(--color-accent)
+				);
+			}
 
-    .timeline-item {
-      position: relative;
-      padding-bottom: var(--space-8);
-    }
+			.timeline-item {
+				position: relative;
+				padding-bottom: var(--space-8);
+			}
 
-    .timeline-dot {
-      position: absolute;
-      left: calc(-1 * var(--space-10) + 3px);
-      top: 4px;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background: var(--color-primary);
-      border: 3px solid var(--color-bg);
-      box-shadow: 0 0 0 2px var(--color-primary);
-    }
+			.timeline-dot {
+				position: absolute;
+				left: calc(-1 * var(--space-10) + 3px);
+				top: 4px;
+				width: 16px;
+				height: 16px;
+				border-radius: 50%;
+				background: var(--color-primary);
+				border: 3px solid var(--color-bg);
+				box-shadow: 0 0 0 2px var(--color-primary);
+			}
 
-    .timeline-year {
-      font-size: var(--text-xs);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      color: var(--color-accent);
-      text-transform: uppercase;
-      margin-bottom: var(--space-1);
-    }
+			.timeline-year {
+				font-size: var(--text-xs);
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				color: var(--color-accent);
+				text-transform: uppercase;
+				margin-bottom: var(--space-1);
+			}
 
-    .timeline-title {
-      font-family: var(--font-display);
-      font-size: var(--text-lg);
-      font-style: italic;
-      margin-bottom: var(--space-2);
-    }
+			.timeline-title {
+				font-family: var(--font-display);
+				font-size: var(--text-lg);
+				font-style: italic;
+				margin-bottom: var(--space-2);
+			}
 
-    .timeline-desc {
-      font-size: var(--text-sm);
-      color: var(--color-text-muted);
-      line-height: 1.65;
-    }
+			.timeline-desc {
+				font-size: var(--text-sm);
+				color: var(--color-text-muted);
+				line-height: 1.65;
+			}
 
-    @media (max-width: 768px) {
-      .story-grid { grid-template-columns: 1fr; }
-      .story-image { position: static; }
-    }
-  </style>
-</head>
-<body>
+			@media (max-width: 768px) {
+				.story-grid {
+					grid-template-columns: 1fr;
+				}
+				.story-image {
+					position: static;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header class="site-header" role="banner">
+			<div class="container">
+				<nav class="nav-inner" aria-label="Main navigation">
+					<a
+						href="../index.html"
+						class="nav-logo"
+						aria-label="Legacy Care Africa home"
+					>
+						<svg
+							width="38"
+							height="38"
+							viewBox="0 0 38 38"
+							fill="none"
+							aria-hidden="true"
+						>
+							<rect
+								width="38"
+								height="38"
+								rx="10"
+								fill="var(--color-primary)"
+							/>
+							<path
+								d="M16 19H22"
+								stroke="white"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+							<path
+								d="M19 16V22"
+								stroke="white"
+								stroke-width="2"
+								stroke-linecap="round"
+							/>
+						</svg>
+						<span class="nav-logo-text">
+							<span class="nav-logo-name"
+								>Legacy Care Africa</span
+							>
+							<span class="nav-logo-sub">Healthcare Group</span>
+						</span>
+					</a>
+					<ul class="nav-links" role="list">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li class="has-dropdown">
+							<a href="#" aria-haspopup="true">Our Companies ▾</a>
+							<div class="nav-dropdown">
+								<a href="uzazi.html"
+									><span class="dropdown-icon">🌿</span> Uzazi
+									Wellness Care</a
+								>
+								<a href="nyumbani.html"
+									><span class="dropdown-icon">🏠</span>
+									Nyumbani Support Solutions</a
+								>
+							</div>
+						</li>
+						<li><a href="blog.html">Wellness Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<div class="nav-controls">
+						<button
+							class="theme-toggle"
+							data-theme-toggle
+							aria-label="Toggle theme"
+						></button>
+						<a
+							href="contact.html"
+							class="btn btn--primary"
+							style="font-size: var(--text-xs)"
+							>Book Consultation</a
+						>
+						<button
+							class="nav-toggle"
+							aria-label="Open menu"
+							aria-expanded="false"
+						>
+							<span></span><span></span><span></span>
+						</button>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<nav class="mobile-nav" aria-label="Mobile navigation">
+			<button
+				class="mobile-nav-close btn btn--ghost"
+				style="align-self: flex-end"
+				aria-label="Close menu"
+			>
+				✕ Close
+			</button>
+			<a href="../index.html">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="uzazi.html" class="mobile-nav-sub"
+				>🌿 Uzazi Wellness Care</a
+			>
+			<a href="nyumbani.html" class="mobile-nav-sub"
+				>🏠 Nyumbani Support Solutions</a
+			>
+			<a href="blog.html">Wellness Blog</a>
+			<a href="contact.html">Contact</a>
+		</nav>
 
-<header class="site-header" role="banner">
-  <div class="container">
-    <nav class="nav-inner" aria-label="Main navigation">
-      <a href="../index.html" class="nav-logo" aria-label="Legacy Care Africa home">
-        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
-          <rect width="38" height="38" rx="10" fill="var(--color-primary)"/>
-          <path d="M16 19H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
-          <path d="M19 16V22" stroke="white" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <span class="nav-logo-text">
-          <span class="nav-logo-name">Legacy Care Africa</span>
-          <span class="nav-logo-sub">Healthcare Group</span>
-        </span>
-      </a>
-      <ul class="nav-links" role="list">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li class="has-dropdown">
-          <a href="#" aria-haspopup="true">Our Companies ▾</a>
-          <div class="nav-dropdown">
-            <a href="uzazi.html"><span class="dropdown-icon">🌿</span> Uzazi Wellness Care</a>
-            <a href="nyumbani.html"><span class="dropdown-icon">🏠</span> Nyumbani Support Solutions</a>
-          </div>
-        </li>
-        <li><a href="blog.html">Wellness Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="nav-controls">
-        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"></button>
-        <a href="contact.html" class="btn btn--primary" style="font-size:var(--text-xs);">Book Consultation</a>
-        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      </div>
-    </nav>
-  </div>
-</header>
-<nav class="mobile-nav" aria-label="Mobile navigation">
-  <button class="mobile-nav-close btn btn--ghost" style="align-self:flex-end;" aria-label="Close menu">✕ Close</button>
-  <a href="../index.html">Home</a>
-  <a href="about.html">About Us</a>
-  <a href="uzazi.html" class="mobile-nav-sub">🌿 Uzazi Wellness Care</a>
-  <a href="nyumbani.html" class="mobile-nav-sub">🏠 Nyumbani Support Solutions</a>
-  <a href="blog.html">Wellness Blog</a>
-  <a href="contact.html">Contact</a>
-</nav>
+		<main id="main">
+			<!-- PAGE HERO -->
+			<section class="page-hero" aria-labelledby="about-heading">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li><a href="../index.html">Home</a></li>
+						<li aria-current="page">About Us</li>
+					</ol>
+					<div class="page-hero-eyebrow">Our Story</div>
+					<h1 id="about-heading" class="page-hero-title">
+						Built from conviction. Growing by care.
+					</h1>
+					<p class="page-hero-lead">
+						Legacy Care Africa was born from a simple belief: that
+						African families deserve healthcare that honors their
+						identity, their traditions, and their right to dignity
+						at every stage of life.
+					</p>
+				</div>
+			</section>
 
-<main id="main">
+			<!-- OUR STORY -->
+			<section class="section" aria-labelledby="story-heading">
+				<div class="container">
+					<div class="story-grid">
+						<div class="story-image" data-animate>
+							<img
+								src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80&auto=format&fit=crop"
+								alt="African healthcare leadership team in discussion around a table"
+								loading="lazy"
+								width="600"
+								height="750"
+							/>
+						</div>
+						<div class="story-body">
+							<span class="eyebrow">The Founding Story</span>
+							<h2 id="story-heading" class="section-title">
+								Why Legacy Care Africa exists
+							</h2>
 
-<!-- PAGE HERO -->
-<section class="page-hero" aria-labelledby="about-heading">
-  <div class="container">
-    <ol class="breadcrumb">
-      <li><a href="../index.html">Home</a></li>
-      <li aria-current="page">About Us</li>
-    </ol>
-    <div class="page-hero-eyebrow">Our Story</div>
-    <h1 id="about-heading" class="page-hero-title">Built from conviction. Growing by care.</h1>
-    <p class="page-hero-lead">Legacy Care Africa was born from a simple belief: that African families deserve healthcare that honors their identity, their traditions, and their right to dignity at every stage of life.</p>
-  </div>
-</section>
+							<p>
+								Legacy Care Africa was founded after witnessing
+								firsthand the gaps that exist between the
+								healthcare African families receive and the care
+								they deserve. Too many mothers birth without a
+								trusted guide. Too many elders spend their final
+								years in facilities far from their children. Too
+								many families navigate complex medical systems
+								alone, in languages that don't feel like home.
+							</p>
 
-<!-- OUR STORY -->
-<section class="section" aria-labelledby="story-heading">
-  <div class="container">
-    <div class="story-grid">
-      <div class="story-image" data-animate>
-        <img
-          src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80&auto=format&fit=crop"
-          alt="African healthcare leadership team in discussion around a table"
-          loading="lazy" width="600" height="750"
-        >
-      </div>
-      <div class="story-body">
-        <span class="eyebrow">The Founding Story</span>
-        <h2 id="story-heading" class="section-title">Why Legacy Care Africa exists</h2>
+							<blockquote class="pull-quote">
+								"We didn't build Legacy Care Africa to compete
+								with existing healthcare systems. We built it to
+								fill the spaces those systems have always left
+								behind."
+							</blockquote>
 
-        <p>Legacy Care Africa was founded after witnessing firsthand the gaps that exist between the healthcare African families receive and the care they deserve. Too many mothers birth without a trusted guide. Too many elders spend their final years in facilities far from their children. Too many families navigate complex medical systems alone, in languages that don't feel like home.</p>
+							<p>
+								Our founders — with backgrounds spanning
+								clinical nursing, public health, financial
+								management, and community development — came
+								together with a shared conviction:
+								<strong
+									>healthcare built by Africans, for Africans,
+									within African communities</strong
+								>
+								is the most powerful tool for generational
+								wellness we have.
+							</p>
 
-        <blockquote class="pull-quote">"We didn't build Legacy Care Africa to compete with existing healthcare systems. We built it to fill the spaces those systems have always left behind."</blockquote>
+							<p>
+								We began with a question: What if every mother
+								in Kenya could access the same quality of birth
+								support as mothers in London or Nairobi's
+								private clinics — regardless of postal code?
+								What if every family caring for an aging parent
+								had access to a nurse, not just a prayer and a
+								hope?
+							</p>
 
-        <p>Our founders — with backgrounds spanning clinical nursing, public health, financial management, and community development — came together with a shared conviction: <strong>healthcare built by Africans, for Africans, within African communities</strong> is the most powerful tool for generational wellness we have.</p>
+							<p>
+								Legacy Care Africa Group is our answer. Through
+								our registered subsidiaries Uzazi Wellness Care
+								and Nyumbani Support Solutions, we are building
+								the infrastructure for the healthcare experience
+								every African family deserves.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <p>We began with a question: What if every mother in Kenya could access the same quality of birth support as mothers in London or Nairobi's private clinics — regardless of postal code? What if every family caring for an aging parent had access to a nurse, not just a prayer and a hope?</p>
+			<!-- MISSION & VISION & VALUES -->
+			<section
+				id="values"
+				class="section"
+				style="background: var(--color-surface-offset)"
+				aria-labelledby="values-heading"
+			>
+				<div class="container">
+					<div class="section-header section-header--center">
+						<span class="eyebrow">What Guides Us</span>
+						<h2 id="values-heading" class="section-title">
+							Mission, Vision &amp; Values
+						</h2>
+					</div>
+					<div
+						class="mission-split"
+						style="
+							display: grid;
+							grid-template-columns: 1fr 1fr;
+							gap: var(--space-2);
+							border-radius: var(--radius-2xl);
+							overflow: hidden;
+							border: 1px solid var(--color-border);
+							margin-bottom: var(--space-10);
+						"
+					>
+						<div
+							style="
+								padding: clamp(
+									var(--space-8),
+									4vw,
+									var(--space-12)
+								);
+								background: var(--color-surface);
+							"
+						>
+							<span
+								style="
+									font-family: var(--font-display);
+									font-size: var(--text-3xl);
+									color: var(--color-accent);
+									opacity: 0.2;
+									line-height: 1;
+									display: block;
+									margin-bottom: var(--space-3);
+								"
+								>01</span
+							>
+							<h3
+								style="
+									font-family: var(--font-display);
+									font-size: var(--text-xl);
+									font-style: italic;
+									margin-bottom: var(--space-4);
+								"
+							>
+								Mission
+							</h3>
+							<p
+								style="
+									color: var(--color-text-muted);
+									line-height: 1.75;
+								"
+							>
+								To deliver compassionate, culturally grounded
+								healthcare that bridges traditional African
+								healing wisdom with modern medical excellence —
+								ensuring every family we serve feels seen,
+								honored, and well cared for.
+							</p>
+						</div>
+						<div
+							style="
+								padding: clamp(
+									var(--space-8),
+									4vw,
+									var(--space-12)
+								);
+								background: var(--color-surface-offset);
+							"
+						>
+							<span
+								style="
+									font-family: var(--font-display);
+									font-size: var(--text-3xl);
+									color: var(--color-accent);
+									opacity: 0.2;
+									line-height: 1;
+									display: block;
+									margin-bottom: var(--space-3);
+								"
+								>02</span
+							>
+							<h3
+								style="
+									font-family: var(--font-display);
+									font-size: var(--text-xl);
+									font-style: italic;
+									margin-bottom: var(--space-4);
+								"
+							>
+								Vision
+							</h3>
+							<p
+								style="
+									color: var(--color-text-muted);
+									line-height: 1.75;
+								"
+							>
+								A continent where geography, income, or cultural
+								identity never determines the quality of care a
+								family receives — where every birth is
+								dignified, every elder is honored, and every
+								home is a place of healing.
+							</p>
+						</div>
+					</div>
+					<div class="values-grid">
+						<div class="value-card">
+							<span class="value-icon">🌱</span>
+							<h3 class="value-title">Ubuntu</h3>
+							<p class="value-desc">
+								We are because you are. Our care is communal,
+								relational, and built on human connection — not
+								transactions.
+							</p>
+						</div>
+						<div class="value-card">
+							<span class="value-icon">🤲</span>
+							<h3 class="value-title">Dignity First</h3>
+							<p class="value-desc">
+								Every patient is treated as a person with a
+								history, a culture, and a right to be fully seen
+								and respected.
+							</p>
+						</div>
+						<div class="value-card">
+							<span class="value-icon">🔬</span>
+							<h3 class="value-title">Clinical Excellence</h3>
+							<p class="value-desc">
+								Warmth without rigor is not enough. We hold our
+								clinical team to the highest evidence-based
+								standards.
+							</p>
+						</div>
+						<div class="value-card">
+							<span class="value-icon">🌍</span>
+							<h3 class="value-title">Pan-African Pride</h3>
+							<p class="value-desc">
+								We celebrate the richness of African cultures in
+								everything we do — language, ritual, food, and
+								relationship.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <p>Legacy Care Africa Group is our answer. Through our registered subsidiaries Uzazi Wellness Care and Nyumbani Support Solutions, we are building the infrastructure for the healthcare experience every African family deserves.</p>
-      </div>
-    </div>
-  </div>
-</section>
+			<!-- TIMELINE -->
+			<section class="section" aria-labelledby="timeline-heading">
+				<div class="container container--narrow">
+					<div class="section-header section-header--center">
+						<span class="eyebrow">Our Journey</span>
+						<h2 id="timeline-heading" class="section-title">
+							Building the legacy, one step at a time
+						</h2>
+					</div>
+					<div class="timeline" data-animate>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-year">2022</div>
+							<h3 class="timeline-title">The Founding Vision</h3>
+							<p class="timeline-desc">
+								Legacy Care Africa Group is conceptualized by a
+								team of healthcare professionals, community
+								advocates, and business leaders committed to
+								redefining African healthcare delivery.
+							</p>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-year">2023</div>
+							<h3 class="timeline-title">
+								Uzazi Wellness Care Registered
+							</h3>
+							<p class="timeline-desc">
+								Our maternal and birth services subsidiary is
+								officially registered. The first cohort of
+								midwives and birth educators is trained and
+								certified.
+							</p>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-year">2024</div>
+							<h3 class="timeline-title">
+								Nyumbani Support Solutions Launched
+							</h3>
+							<p class="timeline-desc">
+								Home care and medical equipment rental services
+								begin operations in Nairobi. The first 50
+								families receive care within the first month.
+							</p>
+						</div>
+						<div class="timeline-item">
+							<div class="timeline-dot"></div>
+							<div class="timeline-year">2025</div>
+							<h3 class="timeline-title">
+								Expansion to Mombasa &amp; Kisumu
+							</h3>
+							<p class="timeline-desc">
+								Both subsidiaries expand to coastal and western
+								Kenya. A diaspora partnership program is
+								launched for Kenyans abroad arranging care for
+								family at home.
+							</p>
+						</div>
+						<div class="timeline-item">
+							<div
+								class="timeline-dot"
+								style="background: var(--color-accent)"
+							></div>
+							<div class="timeline-year">2026 →</div>
+							<h3 class="timeline-title">
+								East African Expansion Underway
+							</h3>
+							<p class="timeline-desc">
+								Legacy Care Africa Group begins feasibility
+								studies in Uganda, Tanzania, and Rwanda. The
+								vision is continental. The foundation has been
+								laid.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<!-- MISSION & VISION & VALUES -->
-<section id="values" class="section" style="background:var(--color-surface-offset);" aria-labelledby="values-heading">
-  <div class="container">
-    <div class="section-header section-header--center">
-      <span class="eyebrow">What Guides Us</span>
-      <h2 id="values-heading" class="section-title">Mission, Vision &amp; Values</h2>
-    </div>
-    <div class="mission-split" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-2);border-radius:var(--radius-2xl);overflow:hidden;border:1px solid var(--color-border);margin-bottom:var(--space-10);">
-      <div style="padding:clamp(var(--space-8),4vw,var(--space-12));background:var(--color-surface);">
-        <span style="font-family:var(--font-display);font-size:var(--text-3xl);color:var(--color-accent);opacity:0.2;line-height:1;display:block;margin-bottom:var(--space-3)">01</span>
-        <h3 style="font-family:var(--font-display);font-size:var(--text-xl);font-style:italic;margin-bottom:var(--space-4);">Mission</h3>
-        <p style="color:var(--color-text-muted);line-height:1.75;">To deliver compassionate, culturally grounded healthcare that bridges traditional African healing wisdom with modern medical excellence — ensuring every family we serve feels seen, honored, and well cared for.</p>
-      </div>
-      <div style="padding:clamp(var(--space-8),4vw,var(--space-12));background:var(--color-surface-offset);">
-        <span style="font-family:var(--font-display);font-size:var(--text-3xl);color:var(--color-accent);opacity:0.2;line-height:1;display:block;margin-bottom:var(--space-3)">02</span>
-        <h3 style="font-family:var(--font-display);font-size:var(--text-xl);font-style:italic;margin-bottom:var(--space-4);">Vision</h3>
-        <p style="color:var(--color-text-muted);line-height:1.75;">A continent where geography, income, or cultural identity never determines the quality of care a family receives — where every birth is dignified, every elder is honored, and every home is a place of healing.</p>
-      </div>
-    </div>
-    <div class="values-grid">
-      <div class="value-card">
-        <span class="value-icon">🌱</span>
-        <h3 class="value-title">Ubuntu</h3>
-        <p class="value-desc">We are because you are. Our care is communal, relational, and built on human connection — not transactions.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">🤲</span>
-        <h3 class="value-title">Dignity First</h3>
-        <p class="value-desc">Every patient is treated as a person with a history, a culture, and a right to be fully seen and respected.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">🔬</span>
-        <h3 class="value-title">Clinical Excellence</h3>
-        <p class="value-desc">Warmth without rigor is not enough. We hold our clinical team to the highest evidence-based standards.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">🌍</span>
-        <h3 class="value-title">Pan-African Pride</h3>
-        <p class="value-desc">We celebrate the richness of African cultures in everything we do — language, ritual, food, and relationship.</p>
-      </div>
-    </div>
-  </div>
-</section>
+			<!-- TEAM -->
+			<section
+				id="team"
+				class="section"
+				style="background: var(--color-surface-offset)"
+				aria-labelledby="team-heading"
+			>
+				<div class="container">
+					<div class="section-header section-header--center">
+						<span class="eyebrow">Leadership</span>
+						<h2 id="team-heading" class="section-title">
+							The people behind the care
+						</h2>
+					</div>
+					<div class="team-grid">
+						<div class="team-card" data-animate>
+							<div class="team-photo">
+								<div
+									class="team-photo-placeholder"
+									aria-hidden="true"
+								>
+									AM
+								</div>
+							</div>
+							<h3 class="team-name">Dr. Aisha Mwangi</h3>
+							<div class="team-role">Founder &amp; CEO</div>
+							<p class="team-bio">
+								A public health physician and maternal health
+								specialist with 15 years of service across East
+								African communities. Aisha founded Legacy Care
+								Africa to institutionalize the care she saw
+								communities providing each other informally.
+							</p>
+						</div>
+						<div class="team-card" data-animate>
+							<div class="team-photo">
+								<div
+									class="team-photo-placeholder"
+									aria-hidden="true"
+								>
+									JO
+								</div>
+							</div>
+							<h3 class="team-name">James Otieno</h3>
+							<div class="team-role">
+								COO — Nyumbani Support Solutions
+							</div>
+							<p class="team-bio">
+								Formerly a critical care nurse at Kenyatta
+								National Hospital, James built the operational
+								frameworks for Nyumbani's home care delivery
+								system, including 24/7 emergency response
+								protocols.
+							</p>
+						</div>
+						<div class="team-card" data-animate>
+							<div class="team-photo">
+								<div
+									class="team-photo-placeholder"
+									aria-hidden="true"
+								>
+									FN
+								</div>
+							</div>
+							<h3 class="team-name">Fatuma Njoroge, CNM</h3>
+							<div class="team-role">
+								Clinical Director — Uzazi Wellness Care
+							</div>
+							<p class="team-bio">
+								A Certified Nurse Midwife trained in Kenya and
+								the United Kingdom, Fatuma leads Uzazi's
+								midwifery team with a philosophy of birth as a
+								rite of passage, not a medical procedure.
+							</p>
+						</div>
+						<div class="team-card" data-animate>
+							<div class="team-photo">
+								<div
+									class="team-photo-placeholder"
+									aria-hidden="true"
+								>
+									DM
+								</div>
+							</div>
+							<h3 class="team-name">David Mburu</h3>
+							<div class="team-role">
+								Head of Finance &amp; Strategy
+							</div>
+							<p class="team-bio">
+								With a background in social enterprise finance,
+								David structures Legacy Care Africa's growth
+								model to remain accessible to underserved
+								communities while building long-term
+								organizational sustainability.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<!-- TIMELINE -->
-<section class="section" aria-labelledby="timeline-heading">
-  <div class="container container--narrow">
-    <div class="section-header section-header--center">
-      <span class="eyebrow">Our Journey</span>
-      <h2 id="timeline-heading" class="section-title">Building the legacy, one step at a time</h2>
-    </div>
-    <div class="timeline" data-animate>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-year">2022</div>
-        <h3 class="timeline-title">The Founding Vision</h3>
-        <p class="timeline-desc">Legacy Care Africa Group is conceptualized by a team of healthcare professionals, community advocates, and business leaders committed to redefining African healthcare delivery.</p>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-year">2023</div>
-        <h3 class="timeline-title">Uzazi Wellness Care Registered</h3>
-        <p class="timeline-desc">Our maternal and birth services subsidiary is officially registered. The first cohort of midwives and birth educators is trained and certified.</p>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-year">2024</div>
-        <h3 class="timeline-title">Nyumbani Support Solutions Launched</h3>
-        <p class="timeline-desc">Home care and medical equipment rental services begin operations in Nairobi. The first 50 families receive care within the first month.</p>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-year">2025</div>
-        <h3 class="timeline-title">Expansion to Mombasa &amp; Kisumu</h3>
-        <p class="timeline-desc">Both subsidiaries expand to coastal and western Kenya. A diaspora partnership program is launched for Kenyans abroad arranging care for family at home.</p>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-dot" style="background: var(--color-accent);"></div>
-        <div class="timeline-year">2026 →</div>
-        <h3 class="timeline-title">East African Expansion Underway</h3>
-        <p class="timeline-desc">Legacy Care Africa Group begins feasibility studies in Uganda, Tanzania, and Rwanda. The vision is continental. The foundation has been laid.</p>
-      </div>
-    </div>
-  </div>
-</section>
+			<!-- PARTNERSHIPS -->
+			<section class="section" aria-labelledby="partners-heading">
+				<div
+					class="container container--narrow"
+					style="text-align: center"
+				>
+					<span class="eyebrow">Partners &amp; Affiliations</span>
+					<h2 id="partners-heading" class="section-title">
+						We don't work alone
+					</h2>
+					<p
+						style="
+							font-size: var(--text-base);
+							color: var(--color-text-muted);
+							max-width: 52ch;
+							margin: var(--space-4) auto var(--space-8);
+						"
+					>
+						Legacy Care Africa collaborates with hospitals,
+						community organizations, diaspora networks, and global
+						health institutions to extend reach and deepen impact.
+					</p>
+					<div
+						style="
+							display: flex;
+							flex-wrap: wrap;
+							gap: var(--space-3);
+							justify-content: center;
+						"
+					>
+						<span
+							class="badge"
+							style="
+								padding: var(--space-3) var(--space-5);
+								font-size: var(--text-sm);
+							"
+							>Kenya Ministry of Health</span
+						>
+						<span
+							class="badge"
+							style="
+								padding: var(--space-3) var(--space-5);
+								font-size: var(--text-sm);
+							"
+							>WHO Kenya Country Office</span
+						>
+						<span
+							class="badge"
+							style="
+								padding: var(--space-3) var(--space-5);
+								font-size: var(--text-sm);
+							"
+							>Kenyatta National Hospital</span
+						>
+						<span
+							class="badge"
+							style="
+								padding: var(--space-3) var(--space-5);
+								font-size: var(--text-sm);
+							"
+							>Kenya Registered Midwives Association</span
+						>
+						<span
+							class="badge"
+							style="
+								padding: var(--space-3) var(--space-5);
+								font-size: var(--text-sm);
+							"
+							>African Health Sciences Network</span
+						>
+						<span
+							class="badge"
+							style="
+								padding: var(--space-3) var(--space-5);
+								font-size: var(--text-sm);
+							"
+							>NHIF Partner Provider</span
+						>
+					</div>
+				</div>
+			</section>
 
-<!-- TEAM -->
-<section id="team" class="section" style="background: var(--color-surface-offset);" aria-labelledby="team-heading">
-  <div class="container">
-    <div class="section-header section-header--center">
-      <span class="eyebrow">Leadership</span>
-      <h2 id="team-heading" class="section-title">The people behind the care</h2>
-    </div>
-    <div class="team-grid">
-      <div class="team-card" data-animate>
-        <div class="team-photo">
-          <div class="team-photo-placeholder" aria-hidden="true">AM</div>
-        </div>
-        <h3 class="team-name">Dr. Aisha Mwangi</h3>
-        <div class="team-role">Founder &amp; CEO</div>
-        <p class="team-bio">A public health physician and maternal health specialist with 15 years of service across East African communities. Aisha founded Legacy Care Africa to institutionalize the care she saw communities providing each other informally.</p>
-      </div>
-      <div class="team-card" data-animate>
-        <div class="team-photo">
-          <div class="team-photo-placeholder" aria-hidden="true">JO</div>
-        </div>
-        <h3 class="team-name">James Otieno</h3>
-        <div class="team-role">COO — Nyumbani Support Solutions</div>
-        <p class="team-bio">Formerly a critical care nurse at Kenyatta National Hospital, James built the operational frameworks for Nyumbani's home care delivery system, including 24/7 emergency response protocols.</p>
-      </div>
-      <div class="team-card" data-animate>
-        <div class="team-photo">
-          <div class="team-photo-placeholder" aria-hidden="true">FN</div>
-        </div>
-        <h3 class="team-name">Fatuma Njoroge, CNM</h3>
-        <div class="team-role">Clinical Director — Uzazi Wellness Care</div>
-        <p class="team-bio">A Certified Nurse Midwife trained in Kenya and the United Kingdom, Fatuma leads Uzazi's midwifery team with a philosophy of birth as a rite of passage, not a medical procedure.</p>
-      </div>
-      <div class="team-card" data-animate>
-        <div class="team-photo">
-          <div class="team-photo-placeholder" aria-hidden="true">DM</div>
-        </div>
-        <h3 class="team-name">David Mburu</h3>
-        <div class="team-role">Head of Finance &amp; Strategy</div>
-        <p class="team-bio">With a background in social enterprise finance, David structures Legacy Care Africa's growth model to remain accessible to underserved communities while building long-term organizational sustainability.</p>
-      </div>
-    </div>
-  </div>
-</section>
+			<!-- CTA -->
+			<section class="section" aria-labelledby="about-cta-heading">
+				<div class="container">
+					<div class="cta-banner" data-animate>
+						<p class="cta-banner-eyebrow">Join Our Mission</p>
+						<h2 id="about-cta-heading" class="cta-banner-title">
+							Be part of the legacy we're building
+						</h2>
+						<p class="cta-banner-lead">
+							Whether you're a patient, a caregiver, a healthcare
+							professional, or an investor — there's a place for
+							you in the Legacy Care Africa story.
+						</p>
+						<div
+							style="
+								display: flex;
+								gap: var(--space-4);
+								justify-content: center;
+								flex-wrap: wrap;
+							"
+						>
+							<a
+								href="contact.html"
+								class="btn btn--accent btn--lg"
+								>Get in Touch</a
+							>
+							<a
+								href="../index.html#companies"
+								class="btn btn--outline btn--lg"
+								>Explore Our Services</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-<!-- PARTNERSHIPS -->
-<section class="section" aria-labelledby="partners-heading">
-  <div class="container container--narrow" style="text-align:center;">
-    <span class="eyebrow">Partners &amp; Affiliations</span>
-    <h2 id="partners-heading" class="section-title">We don't work alone</h2>
-    <p style="font-size:var(--text-base);color:var(--color-text-muted);max-width:52ch;margin:var(--space-4) auto var(--space-8);">Legacy Care Africa collaborates with hospitals, community organizations, diaspora networks, and global health institutions to extend reach and deepen impact.</p>
-    <div style="display:flex;flex-wrap:wrap;gap:var(--space-3);justify-content:center;">
-      <span class="badge" style="padding:var(--space-3) var(--space-5);font-size:var(--text-sm);">Kenya Ministry of Health</span>
-      <span class="badge" style="padding:var(--space-3) var(--space-5);font-size:var(--text-sm);">WHO Kenya Country Office</span>
-      <span class="badge" style="padding:var(--space-3) var(--space-5);font-size:var(--text-sm);">Kenyatta National Hospital</span>
-      <span class="badge" style="padding:var(--space-3) var(--space-5);font-size:var(--text-sm);">Kenya Registered Midwives Association</span>
-      <span class="badge" style="padding:var(--space-3) var(--space-5);font-size:var(--text-sm);">African Health Sciences Network</span>
-      <span class="badge" style="padding:var(--space-3) var(--space-5);font-size:var(--text-sm);">NHIF Partner Provider</span>
-    </div>
-  </div>
-</section>
+		<footer class="site-footer" role="contentinfo">
+			<div class="container">
+				<div class="footer-grid">
+					<div class="footer-brand">
+						<a
+							href="../index.html"
+							class="nav-logo"
+							style="margin-bottom: var(--space-3)"
+						>
+							<svg
+								width="32"
+								height="32"
+								viewBox="0 0 38 38"
+								fill="none"
+								aria-hidden="true"
+							>
+								<rect
+									width="38"
+									height="38"
+									rx="10"
+									fill="var(--color-primary)"
+								/>
+								<path
+									d="M16 19H22"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+								<path
+									d="M19 16V22"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+							<span class="nav-logo-text"
+								><span class="nav-logo-name"
+									>Legacy Care Africa</span
+								></span
+							>
+						</a>
+						<p>
+							Pan-African healthcare rooted in community,
+							compassion, and dignity.
+						</p>
+					</div>
+					<div>
+						<h3 class="footer-col-title">Company</h3>
+						<ul class="footer-links" role="list">
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="#team">Leadership</a></li>
+							<li><a href="#values">Our Values</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="footer-col-title">Our Companies</h3>
+						<ul class="footer-links" role="list">
+							<li>
+								<a href="uzazi.html">Uzazi Wellness Care</a>
+							</li>
+							<li>
+								<a href="nyumbani.html">Nyumbani Support</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="footer-col-title">Connect</h3>
+						<ul class="footer-links" role="list">
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li>
+								<a href="mailto:info@kusacapital.com"
+									>info@kusacapital.com</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<span
+						>© 2026 Legacy Care Africa Group. All rights
+						reserved.</span
+					>
+				</div>
+			</div>
+		</footer>
 
-<!-- CTA -->
-<section class="section" aria-labelledby="about-cta-heading">
-  <div class="container">
-    <div class="cta-banner" data-animate>
-      <p class="cta-banner-eyebrow">Join Our Mission</p>
-      <h2 id="about-cta-heading" class="cta-banner-title">Be part of the legacy we're building</h2>
-      <p class="cta-banner-lead">Whether you're a patient, a caregiver, a healthcare professional, or an investor — there's a place for you in the Legacy Care Africa story.</p>
-      <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
-        <a href="contact.html" class="btn btn--accent btn--lg">Get in Touch</a>
-        <a href="../index.html#companies" class="btn btn--outline btn--lg">Explore Our Services</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer class="site-footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="../index.html" class="nav-logo" style="margin-bottom:var(--space-3);">
-          <svg width="32" height="32" viewBox="0 0 38 38" fill="none" aria-hidden="true">
-            <rect width="38" height="38" rx="10" fill="var(--color-primary)"/>
-            <path d="M16 19H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <path d="M19 16V22" stroke="white" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          <span class="nav-logo-text"><span class="nav-logo-name">Legacy Care Africa</span></span>
-        </a>
-        <p>Pan-African healthcare rooted in community, compassion, and dignity.</p>
-      </div>
-      <div>
-        <h3 class="footer-col-title">Company</h3>
-        <ul class="footer-links" role="list">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="#team">Leadership</a></li>
-          <li><a href="#values">Our Values</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="footer-col-title">Our Companies</h3>
-        <ul class="footer-links" role="list">
-          <li><a href="uzazi.html">Uzazi Wellness Care</a></li>
-          <li><a href="nyumbani.html">Nyumbani Support</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="footer-col-title">Connect</h3>
-        <ul class="footer-links" role="list">
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="mailto:info@legacycareafrica.com">info@legacycareafrica.com</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Legacy Care Africa Group. All rights reserved.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="../js/main.js"></script>
-</body>
+		<script src="../js/main.js"></script>
+	</body>
 </html>
