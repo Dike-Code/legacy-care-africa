@@ -6,1049 +6,1146 @@
 		<title>Legacy Care Africa — Rooted in Heritage. Guided by Care.</title>
 		<meta
 			name="description"
-			content="Legacy Care Africa is a pan-African healthcare company delivering compassionate maternal wellness, home care, and medical support through our subsidiaries Uzazi Wellness Care and Nyumbani Support Solutions."
+			content="Legacy Care Africa is a Pan-African healthcare group uniting Uzazi Wellness Care and Nyumbani Support Solutions — bringing dignified maternal wellness and compassionate in-home care to African families across Kenya and beyond."
 		/>
-		<meta property="og:title" content="Legacy Care Africa" />
+		<meta
+			name="keywords"
+			content="Legacy Care Africa, African healthcare, maternal wellness Kenya, home care Kenya, Uzazi Wellness Care, Nyumbani Support Solutions, Pan-African healthcare"
+		/>
+		<meta
+			property="og:title"
+			content="Legacy Care Africa — Rooted in Heritage. Guided by Care."
+		/>
 		<meta
 			property="og:description"
-			content="Rooted in heritage. Guided by care. Pan-African healthcare built around you."
+			content="A Pan-African healthcare group uniting compassionate maternal wellness and dignified home care under one roof."
 		/>
 		<meta property="og:type" content="website" />
-
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<meta property="og:image" content="./assets/photos/legacy-hero.jpg" />
+		<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap"
+			href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,600,700&f[]=general-sans@300,400,500,600&display=swap"
 			rel="stylesheet"
 		/>
-
-		<link rel="stylesheet" href="css/tokens.css" />
-		<link rel="stylesheet" href="css/base.css" />
-		<link rel="stylesheet" href="css/nav.css" />
-		<link rel="stylesheet" href="css/components.css" />
-
-		<style>
-			/* ---- Mission/Vision split ---- */
-			.mission-split {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				gap: var(--space-2);
-				border-radius: var(--radius-2xl);
-				overflow: hidden;
-				border: 1px solid var(--color-border);
-			}
-			.mission-panel {
-				padding: clamp(var(--space-8), 4vw, var(--space-12));
-				background: var(--color-surface);
-			}
-			.mission-panel--alt {
-				background: var(--color-surface-offset);
-			}
-			.mission-number {
-				font-family: var(--font-display);
-				font-size: var(--text-3xl);
-				color: var(--color-accent);
-				opacity: 0.2;
-				line-height: 1;
-				margin-bottom: var(--space-3);
-				display: block;
-			}
-			.mission-heading {
-				font-family: var(--font-display);
-				font-size: var(--text-xl);
-				font-style: italic;
-				margin-bottom: var(--space-4);
-			}
-			.mission-text {
-				font-size: var(--text-base);
-				color: var(--color-text-muted);
-				line-height: 1.75;
-			}
-
-			/* ---- Why us ---- */
-			.why-grid {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				gap: clamp(var(--space-10), 5vw, var(--space-16));
-				align-items: center;
-			}
-			.why-list {
-				list-style: none;
-				display: flex;
-				flex-direction: column;
-				gap: var(--space-5);
-				margin-top: var(--space-6);
-			}
-			.why-item {
-				display: flex;
-				gap: var(--space-4);
-				align-items: flex-start;
-			}
-			.why-bullet {
-				width: 36px;
-				height: 36px;
-				border-radius: var(--radius-md);
-				background: var(--color-primary-highlight);
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				color: var(--color-primary);
-				font-size: 1rem;
-				flex-shrink: 0;
-				margin-top: 2px;
-			}
-			.why-item-title {
-				font-weight: 600;
-				margin-bottom: var(--space-1);
-				font-size: var(--text-base);
-			}
-			.why-item-desc {
-				font-size: var(--text-sm);
-				color: var(--color-text-muted);
-				line-height: 1.65;
-			}
-			.why-image {
-				border-radius: var(--radius-2xl);
-				overflow: hidden;
-				aspect-ratio: 3/4;
-				box-shadow: var(--shadow-xl);
-			}
-			.why-image img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-
-			/* ---- Decorative baobab circles ---- */
-			.accent-dot {
-				display: inline-block;
-				width: 8px;
-				height: 8px;
-				border-radius: 50%;
-				background: var(--color-accent);
-				flex-shrink: 0;
-			}
-
-			@media (max-width: 900px) {
-				.mission-split {
-					grid-template-columns: 1fr;
-				}
-				.why-grid {
-					grid-template-columns: 1fr;
-				}
-			}
-		</style>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="64x64"
+			href="./assets/favicon-64.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/favicon-180.png"
+		/>
 	</head>
 	<body>
-		<!-- ========== NAVIGATION ========== -->
-		<header class="site-header" role="banner">
-			<div class="container">
-				<nav
-					class="nav-inner"
-					aria-label="Main navigation"
-					style="height: 100%"
+		<a href="#main" class="skip-link">Skip to content</a>
+		<div class="top-banner">
+			🌿 Two subsidiaries. One legacy of care. —
+			<a href="./pages/contact.html">Speak with our care team →</a>
+		</div>
+		<header class="site-header">
+			<div class="container nav">
+				<a
+					href="./index.html"
+					class="brand"
+					aria-label="Legacy Care Africa home"
 				>
+					<img
+						src="./assets/lca-emblem.png"
+						alt="Legacy Care Africa emblem — stylized Africa with leaves"
+						width="48"
+						height="48"
+						style="
+							display: block;
+							flex-shrink: 0;
+							object-fit: contain;
+						"
+					/>
+					<span class="brand-wordmark">
+						<span class="brand-wordmark-name"
+							>Legacy Care Africa</span
+						>
+						<span class="brand-wordmark-tag">HEALTHCARE GROUP</span>
+					</span>
+				</a>
+				<ul class="nav-links" id="nav-menu">
+					<li><a href="./index.html" class="active">Home</a></li>
+					<li><a href="./pages/about.html">About</a></li>
+					<li>
+						<a href="./pages/our-companies.html">Our Companies</a>
+					</li>
+					<li><a href="./pages/blog.html">Wellness Blog</a></li>
+					<li><a href="./pages/contact.html">Contact</a></li>
+				</ul>
+				<div class="nav-cta">
+					<button class="theme-toggle" aria-label="Toggle dark mode">
+						<svg
+							class="sun"
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<circle cx="12" cy="12" r="4" />
+							<path
+								d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+							/>
+						</svg>
+						<svg
+							class="moon"
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path
+								d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+							/>
+						</svg>
+					</button>
 					<a
-						href="index.html"
-						class="nav-logo"
-						aria-label="Legacy Care Africa home"
+						href="./pages/contact.html"
+						class="btn btn-primary nav-book"
+						>Book a Consultation</a
 					>
-						<!-- SVG Logo: stylized leaf + cross forming an L shape -->
-						<img
-							src="./images/legacyLogo.jpeg"
-							alt="Legacy Care Africa logo: stylized leaf and cross"
-							width="100"
-							height="80px"
-						/>
-						<span class="nav-logo-text">
-							<span class="nav-logo-name"
-								>Legacy Care Africa</span
-							>
-							<span class="nav-logo-sub">Healthcare Group</span>
-						</span>
-					</a>
-
-					<ul class="nav-links" role="list">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="pages/about.html">About Us</a></li>
-						<li class="has-dropdown">
-							<a href="#" aria-haspopup="true">Our Companies ▾</a>
-							<div class="nav-dropdown">
-								<a href="pages/uzazi.html"
-									><span class="dropdown-icon">🌿</span> Uzazi
-									Wellness Care</a
-								>
-								<a href="pages/nyumbani.html"
-									><span class="dropdown-icon">🏠</span>
-									Nyumbani Support Solutions</a
-								>
-							</div>
-						</li>
-						<li><a href="pages/blog.html">Wellness Blog</a></li>
-						<li><a href="pages/contact.html">Contact</a></li>
-					</ul>
-
-					<div class="nav-controls">
-						<button
-							class="theme-toggle"
-							data-theme-toggle
-							aria-label="Toggle theme"
+					<button
+						class="menu-toggle"
+						aria-label="Open menu"
+						aria-expanded="false"
+						aria-controls="nav-menu"
+					>
+						<svg
+							width="22"
+							height="22"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
 						>
-							<!-- Icon injected by JS -->
-						</button>
-						<a
-							href="pages/contact.html"
-							class="btn btn--primary"
-							style="font-size: var(--text-xs)"
-							>Book a Consultation</a
-						>
-						<button
-							class="nav-toggle"
-							aria-label="Open menu"
-							aria-expanded="false"
-						>
-							<span></span><span></span><span></span>
-						</button>
-					</div>
-				</nav>
+							<path d="M3 6h18M3 12h18M3 18h18" />
+						</svg>
+					</button>
+				</div>
 			</div>
 		</header>
-
-		<!-- Mobile nav overlay -->
-		<nav class="mobile-nav" aria-label="Mobile navigation">
-			<button
-				class="mobile-nav-close btn btn--ghost"
-				style="align-self: flex-end; margin-bottom: var(--space-4)"
-				aria-label="Close menu"
-			>
-				✕ Close
-			</button>
-			<a href="index.html">Home</a>
-			<a href="pages/about.html">About Us</a>
-			<a href="pages/uzazi.html" class="mobile-nav-sub"
-				>🌿 Uzazi Wellness Care</a
-			>
-			<a href="pages/nyumbani.html" class="mobile-nav-sub"
-				>🏠 Nyumbani Support Solutions</a
-			>
-			<a href="pages/blog.html">Wellness Blog</a>
-			<a href="pages/contact.html">Contact</a>
-			<div style="margin-top: var(--space-6)">
-				<a href="pages/contact.html" class="btn btn--primary btn--lg"
-					>Book a Consultation</a
-				>
-			</div>
-		</nav>
-
-		<!-- ========== HERO ========== -->
 		<main id="main">
-			<section class="hero" aria-label="Homepage hero">
-				<div class="hero-bg-pattern" aria-hidden="true"></div>
-				<div class="container hero-content">
-					<div class="hero-grid">
-						<!-- Left: copy -->
-						<div>
-							<div
-								class="hero-eyebrow animate-fade-up"
-								data-animate
-							>
-								<span class="accent-dot"></span>
-								Pan-African Healthcare Group
-							</div>
-							<h1
-								class="hero-heading animate-fade-up animate-delay-1"
-								data-animate
-							>
-								Rooted in Heritage.<br />
-								<strong>Guided by Care.</strong>
-							</h1>
-							<p
-								class="hero-lead animate-fade-up animate-delay-2"
-								data-animate
-							>
-								Legacy Care Africa unites compassionate maternal
-								wellness and dignified home care under one roof
-								— because every African family deserves
-								healthcare that honors who they are.
-							</p>
-							<div
-								class="hero-cta-group animate-fade-up animate-delay-3"
-								data-animate
-							>
-								<a
-									href="pages/contact.html"
-									class="btn btn--primary btn--lg"
-									>Book a Consultation</a
-								>
-								<a
-									href="pages/about.html"
-									class="btn btn--ghost btn--lg"
-									>Our Story →</a
-								>
-							</div>
-
-							<!-- Stats bar -->
-							<div
-								class="hero-stats-bar animate-fade-up animate-delay-4"
-								data-animate
-							>
-								<div class="stat-item">
-									<span class="stat-number">2</span>
-									<span class="stat-label"
-										>Registered subsidiaries</span
-									>
-								</div>
-								<div class="stat-item">
-									<span class="stat-number">3+</span>
-									<span class="stat-label"
-										>Countries served</span
-									>
-								</div>
-								<div class="stat-item">
-									<span class="stat-number">100%</span>
-									<span class="stat-label"
-										>African-led care</span
-									>
-								</div>
-							</div>
-						</div>
-
-						<!-- Right: image -->
-						<div
-							class="hero-image-wrap animate-fade-up animate-delay-2"
-							data-animate
+			<section class="hero">
+				<div class="container hero-inner">
+					<div>
+						<span class="eyebrow"
+							>Pan-African Healthcare Group</span
 						>
-							<img
-								src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=700&q=80&auto=format&fit=crop"
-								alt="African healthcare professional warmly assisting a patient"
-								loading="eager"
-								width="700"
-								height="875"
-							/>
-							<div class="hero-image-badge">
-								<span style="font-size: 1.5rem">🌿</span>
-								<div>
-									<div
-										style="
-											font-weight: 600;
-											font-size: var(--text-sm);
-										"
-									>
-										Wholistic Wellness
-									</div>
-									<div
-										style="
-											font-size: var(--text-xs);
-											color: var(--color-text-muted);
-										"
-									>
-										Body · Mind · Community
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- ========== SUBSIDIARIES STRIP ========== -->
-			<section class="section" aria-labelledby="companies-heading">
-				<div class="container">
-					<div class="section-header section-header--center">
-						<span class="eyebrow">Our Companies</span>
-						<h2 id="companies-heading" class="section-title">
-							Two arms of care, one legacy
-						</h2>
-					</div>
-					<div class="subsidiary-strip">
-						<a
-							href="pages/uzazi.html"
-							class="subsidiary-block subsidiary-block--uzazi"
-							aria-label="Learn about Uzazi Wellness Care"
-						>
-							<span class="subsidiary-label"
-								>Maternal &amp; Birth Services</span
-							>
-							<h3 class="subsidiary-name">Uzazi Wellness Care</h3>
-							<p class="subsidiary-desc">
-								From preconception through postpartum, we walk
-								every step of the birth journey with mothers,
-								families, and midwives across Africa.
-							</p>
-							<span class="subsidiary-cta">Explore Uzazi →</span>
-						</a>
-						<a
-							href="pages/nyumbani.html"
-							class="subsidiary-block subsidiary-block--nyumbani"
-							aria-label="Learn about Nyumbani Support Solutions"
-						>
-							<span class="subsidiary-label"
-								>Home Care &amp; Medical Equipment</span
-							>
-							<h3 class="subsidiary-name">
-								Nyumbani Support Solutions
-							</h3>
-							<p class="subsidiary-desc">
-								Hospital-grade home care and medical equipment
-								rental that brings dignified recovery and
-								chronic care management into your home.
-							</p>
-							<span class="subsidiary-cta"
-								>Explore Nyumbani →</span
-							>
-						</a>
-					</div>
-				</div>
-			</section>
-
-			<!-- ========== MISSION & VISION ========== -->
-			<section
-				class="section"
-				style="background: var(--color-surface-offset)"
-				aria-labelledby="mission-heading"
-			>
-				<div class="container">
-					<div class="section-header section-header--center">
-						<span class="eyebrow">Who We Are</span>
-						<h2 id="mission-heading" class="section-title">
-							Purpose-driven from the ground up
-						</h2>
-					</div>
-					<div class="mission-split" data-animate>
-						<div class="mission-panel">
-							<span class="mission-number" aria-hidden="true"
-								>01</span
-							>
-							<h3 class="mission-heading">Our Mission</h3>
-							<p class="mission-text">
-								To deliver compassionate, community-rooted
-								healthcare that honors African identity —
-								bridging the gap between traditional wisdom and
-								modern medical excellence. We exist to serve
-								families, not just patients.
-							</p>
-						</div>
-						<div class="mission-panel mission-panel--alt">
-							<span class="mission-number" aria-hidden="true"
-								>02</span
-							>
-							<h3 class="mission-heading">Our Vision</h3>
-							<p class="mission-text">
-								A continent where every mother births with
-								dignity, every elder recovers at home with
-								comfort, and every family has access to
-								world-class healthcare — regardless of geography
-								or circumstance.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- ========== WHY LEGACY CARE ========== -->
-			<section class="section" aria-labelledby="why-heading">
-				<div class="container">
-					<div class="why-grid">
-						<div>
-							<span class="eyebrow">Why Choose Us</span>
-							<h2 id="why-heading" class="section-title">
-								Care built on trust, not just treatment
-							</h2>
-							<ul class="why-list" role="list">
-								<li class="why-item" data-animate>
-									<div class="why-bullet" aria-hidden="true">
-										🌱
-									</div>
-									<div>
-										<div class="why-item-title">
-											African-Led, Community-Centered
-										</div>
-										<p class="why-item-desc">
-											Every service is designed by
-											Africans who understand the
-											cultural, linguistic, and structural
-											landscape of healthcare on the
-											continent.
-										</p>
-									</div>
-								</li>
-								<li class="why-item" data-animate>
-									<div class="why-bullet" aria-hidden="true">
-										🤝
-									</div>
-									<div>
-										<div class="why-item-title">
-											Personalized & Trauma-Informed
-										</div>
-										<p class="why-item-desc">
-											We train our caregivers in empathic,
-											trauma-informed practice — meeting
-											each patient exactly where they are.
-										</p>
-									</div>
-								</li>
-								<li class="why-item" data-animate>
-									<div class="why-bullet" aria-hidden="true">
-										🏥
-									</div>
-									<div>
-										<div class="why-item-title">
-											Clinical Standards, Human Touch
-										</div>
-										<p class="why-item-desc">
-											Our care teams combine rigorous
-											medical training with warmth —
-											you'll never feel like a number in
-											our system.
-										</p>
-									</div>
-								</li>
-								<li class="why-item" data-animate>
-									<div class="why-bullet" aria-hidden="true">
-										🌍
-									</div>
-									<div>
-										<div class="why-item-title">
-											Cross-Border Reach
-										</div>
-										<p class="why-item-desc">
-											Registered subsidiaries operating
-											across East Africa with expansion
-											underway across the continent.
-										</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="why-image" data-animate>
-							<img
-								src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80&auto=format&fit=crop"
-								alt="African nurse warmly holding hands with an elderly patient at home"
-								loading="lazy"
-								width="600"
-								height="800"
-							/>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- ========== SERVICES OVERVIEW ========== -->
-			<section
-				class="section"
-				style="background: var(--color-surface-offset)"
-				aria-labelledby="services-heading"
-			>
-				<div class="container">
-					<div class="section-header section-header--center">
-						<span class="eyebrow">What We Offer</span>
-						<h2 id="services-heading" class="section-title">
-							Healthcare across the full arc of life
-						</h2>
-					</div>
-					<div class="services-grid">
-						<div
-							class="service-card"
-							style="
-								--service-color: var(--color-primary);
-								--service-bg: var(--color-primary-highlight);
-							"
-							data-animate
-						>
-							<div class="service-icon" aria-hidden="true">
-								🤱
-							</div>
-							<h3 class="service-title">
-								Maternal &amp; Prenatal Care
-							</h3>
-							<p class="service-desc">
-								Comprehensive pregnancy support from first
-								trimester through labor — including midwife-led
-								birth plans, childbirth education, and
-								postpartum visits.
-							</p>
-						</div>
-						<div
-							class="service-card"
-							style="
-								--service-color: var(--color-accent);
-								--service-bg: var(--color-accent-highlight);
-							"
-							data-animate
-						>
-							<div class="service-icon" aria-hidden="true">
-								🌸
-							</div>
-							<h3 class="service-title">Postpartum Wellness</h3>
-							<p class="service-desc">
-								Dedicated aftercare for new mothers including
-								nutrition counseling, mental health support, and
-								lactation guidance.
-							</p>
-						</div>
-						<div
-							class="service-card"
-							style="
-								--service-color: var(--color-gold);
-								--service-bg: var(--color-gold-highlight);
-							"
-							data-animate
-						>
-							<div class="service-icon" aria-hidden="true">
-								🏡
-							</div>
-							<h3 class="service-title">Home Nursing Care</h3>
-							<p class="service-desc">
-								Registered nurses and certified caregivers
-								providing daily, overnight, or hourly support in
-								the comfort of your home.
-							</p>
-						</div>
-						<div
-							class="service-card"
-							style="
-								--service-color: var(--color-primary);
-								--service-bg: var(--color-primary-highlight);
-							"
-							data-animate
-						>
-							<div class="service-icon" aria-hidden="true">
-								🩺
-							</div>
-							<h3 class="service-title">
-								Medical Equipment Rental
-							</h3>
-							<p class="service-desc">
-								Hospital beds, oxygen concentrators,
-								wheelchairs, and more — delivered, installed,
-								and serviced at your location.
-							</p>
-						</div>
-						<div
-							class="service-card"
-							style="
-								--service-color: var(--color-accent);
-								--service-bg: var(--color-accent-highlight);
-							"
-							data-animate
-						>
-							<div class="service-icon" aria-hidden="true">
-								💆🏿
-							</div>
-							<h3 class="service-title">
-								Wellness Consultations
-							</h3>
-							<p class="service-desc">
-								Holistic consultations blending nutritional
-								therapy, traditional African wellness practices,
-								and modern preventive care.
-							</p>
-						</div>
-						<div
-							class="service-card"
-							style="
-								--service-color: var(--color-gold);
-								--service-bg: var(--color-gold-highlight);
-							"
-							data-animate
-						>
-							<div class="service-icon" aria-hidden="true">
-								👨‍👩‍👧
-							</div>
-							<h3 class="service-title">Family Care Planning</h3>
-							<p class="service-desc">
-								From adolescent health to elder care
-								coordination — we support families at every
-								stage with structured, compassionate care plans.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- ========== TESTIMONIALS ========== -->
-			<section class="section" aria-labelledby="testimonials-heading">
-				<div class="container">
-					<div class="section-header section-header--center">
-						<span class="eyebrow">Patient Stories</span>
-						<h2 id="testimonials-heading" class="section-title">
-							Families who trusted us with their most important
-							moments
-						</h2>
-					</div>
-					<div class="testimonials-grid">
-						<article class="testimonial-card" data-animate>
-							<div class="testimonial-stars" aria-label="5 stars">
-								★★★★★
-							</div>
-							<span class="testimonial-quote" aria-hidden="true"
-								>"</span
-							>
-							<p class="testimonial-text">
-								The midwife team at Uzazi stayed with me through
-								a long, difficult labor. They never rushed me.
-								They prayed with me. I felt like I was
-								surrounded by aunties who cared.
-							</p>
-							<div class="testimonial-author">
-								<div
-									class="testimonial-avatar"
-									aria-hidden="true"
-								>
-									A
-								</div>
-								<div>
-									<div class="testimonial-name">Amina K.</div>
-									<div class="testimonial-role">
-										Uzazi Wellness Care client, Nairobi
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="testimonial-card" data-animate>
-							<div class="testimonial-stars" aria-label="5 stars">
-								★★★★★
-							</div>
-							<span class="testimonial-quote" aria-hidden="true"
-								>"</span
-							>
-							<p class="testimonial-text">
-								When my father came home from surgery, we were
-								terrified. Nyumbani sent a nurse within 24
-								hours, delivered the hospital bed, and checked
-								in on us every single day. Truly outstanding.
-							</p>
-							<div class="testimonial-author">
-								<div
-									class="testimonial-avatar"
-									aria-hidden="true"
-								>
-									J
-								</div>
-								<div>
-									<div class="testimonial-name">James O.</div>
-									<div class="testimonial-role">
-										Nyumbani Support client, Mombasa
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="testimonial-card" data-animate>
-							<div class="testimonial-stars" aria-label="5 stars">
-								★★★★★
-							</div>
-							<span class="testimonial-quote" aria-hidden="true"
-								>"</span
-							>
-							<p class="testimonial-text">
-								I was afraid of birth, deeply afraid. The Uzazi
-								care team created a birth plan that respected my
-								fears and my culture. My daughter arrived safely
-								and I wept tears of joy, not fear.
-							</p>
-							<div class="testimonial-author">
-								<div
-									class="testimonial-avatar"
-									aria-hidden="true"
-								>
-									F
-								</div>
-								<div>
-									<div class="testimonial-name">
-										Fatuma W.
-									</div>
-									<div class="testimonial-role">
-										Uzazi Wellness Care client, Kisumu
-									</div>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-
-			<!-- ========== BLOG PREVIEW ========== -->
-			<section
-				class="section"
-				style="background: var(--color-surface-offset)"
-				aria-labelledby="blog-preview-heading"
-			>
-				<div class="container">
-					<div
-						class="section-header"
-						style="
-							display: flex;
-							align-items: flex-end;
-							justify-content: space-between;
-							flex-wrap: wrap;
-							gap: var(--space-4);
-						"
-					>
-						<div>
-							<span class="eyebrow">Wellness Blog</span>
-							<h2 id="blog-preview-heading" class="section-title">
-								Words that nourish
-							</h2>
-						</div>
-						<a href="pages/blog.html" class="btn btn--outline"
-							>Read all articles →</a
-						>
-					</div>
-					<div class="blog-grid">
-						<a
-							href="pages/blog.html#article-1"
-							class="blog-card blog-card--featured"
-							aria-label="Read: The Sacred Fourth Trimester"
-						>
-							<div class="blog-card-image">
-								<img
-									src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=800&q=80&auto=format&fit=crop"
-									alt="Mother holding newborn in warm African home setting"
-									loading="lazy"
-									width="800"
-									height="600"
-								/>
-							</div>
-							<div class="blog-card-body">
-								<span class="blog-tag">Maternal Wellness</span>
-								<h3 class="blog-card-title">
-									The Sacred Fourth Trimester: What African
-									Mothers Deserve After Birth
-								</h3>
-								<p class="blog-card-excerpt">
-									Across African cultures, postpartum care has
-									always been communal. We explore why
-									recovering at home, surrounded by tradition
-									and support, is the most powerful gift you
-									can give a new mother.
-								</p>
-								<div class="blog-meta">
-									<span>Dr. Wanjiru M.</span> ·
-									<span>6 min read</span>
-								</div>
-							</div>
-						</a>
-						<a
-							href="pages/blog.html#article-2"
-							class="blog-card"
-							aria-label="Read: Home Care Myths Debunked"
-						>
-							<div class="blog-card-image">
-								<img
-									src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=500&q=80&auto=format&fit=crop"
-									alt="Caregiver assisting an elder patient at home"
-									loading="lazy"
-									width="500"
-									height="300"
-								/>
-							</div>
-							<div class="blog-card-body">
-								<span class="blog-tag">Home Care</span>
-								<h3 class="blog-card-title">
-									5 Myths About Home Care — And Why They're
-									Holding Your Family Back
-								</h3>
-								<p class="blog-card-excerpt">
-									Many families delay home care for fear of
-									cost or quality. We address the most common
-									concerns head-on.
-								</p>
-								<div class="blog-meta">
-									<span>4 min read</span>
-								</div>
-							</div>
-						</a>
-						<a
-							href="pages/blog.html#article-3"
-							class="blog-card"
-							aria-label="Read: Nourishing Your Pregnancy the African Way"
-						>
-							<div class="blog-card-image">
-								<img
-									src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&q=80&auto=format&fit=crop"
-									alt="Colorful African fruits and vegetables"
-									loading="lazy"
-									width="500"
-									height="300"
-								/>
-							</div>
-							<div class="blog-card-body">
-								<span class="blog-tag">Nutrition</span>
-								<h3 class="blog-card-title">
-									Nourishing Your Pregnancy the African Way
-								</h3>
-								<p class="blog-card-excerpt">
-									Traditional foods like moringa, millet, and
-									African dark leafy greens are powerhouses
-									for expectant mothers.
-								</p>
-								<div class="blog-meta">
-									<span>5 min read</span>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</section>
-
-			<!-- ========== CTA BANNER ========== -->
-			<section class="section" aria-labelledby="cta-heading">
-				<div class="container">
-					<div class="cta-banner" data-animate>
-						<p class="cta-banner-eyebrow">Ready to Begin?</p>
-						<h2 id="cta-heading" class="cta-banner-title">
-							Your family deserves care that feels like home
-						</h2>
-						<p class="cta-banner-lead">
-							Whether you're preparing for birth, caring for an
-							aging parent, or simply seeking guidance — Legacy
-							Care Africa is here for you. Let's start a
-							conversation.
+						<h1>Rooted in heritage.<br />Guided by care.</h1>
+						<p class="lede">
+							Legacy Care Africa unites compassionate maternal
+							wellness and dignified in-home care under one roof —
+							because every African family deserves healthcare
+							that honors who they are.
 						</p>
-						<div
-							style="
-								display: flex;
-								gap: var(--space-4);
-								justify-content: center;
-								flex-wrap: wrap;
-							"
-						>
+						<div class="hero-cta">
 							<a
-								href="pages/contact.html"
-								class="btn btn--accent btn--lg"
+								href="./pages/contact.html"
+								class="btn btn-primary"
 								>Book a Consultation</a
 							>
-							<a
-								href="pages/about.html"
-								class="btn btn--outline btn--lg"
-								>Meet Our Team</a
+							<a href="./pages/about.html" class="btn btn-outline"
+								>Our Story</a
 							>
 						</div>
+						<div class="stats">
+							<div>
+								<div class="stat-num">2</div>
+								<div class="stat-label">
+									Registered subsidiaries
+								</div>
+							</div>
+							<div>
+								<div class="stat-num">Kenya</div>
+								<div class="stat-label">
+									Operating across the country
+								</div>
+							</div>
+							<div>
+								<div class="stat-num">100%</div>
+								<div class="stat-label">African-led care</div>
+							</div>
+						</div>
+					</div>
+					<div class="hero-visual hero-photo">
+						<img
+							src="./assets/photos/legacy-hero.jpg"
+							alt="A multigenerational Kenyan family at home — grandmother, mother holding her newborn, and a caregiver in forest green uniform standing supportively beside them"
+						/>
+						<div class="hero-card">
+							<div class="hero-card-icon">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path
+										d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+									/>
+								</svg>
+							</div>
+							<div>
+								<strong>Wholistic Wellness</strong>
+								<span class="muted" style="font-size: 0.84rem"
+									>Body · Mind · Community</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="partners-strip reveal">
+				<div class="container">
+					<p class="partners-strip-label">
+						A Pan-African healthcare group built on
+					</p>
+					<div class="partners-strip-row">
+						<div class="partner-pill">
+							<svg
+								width="14"
+								height="14"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path
+									d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+								/></svg
+							>African-Led Leadership
+						</div>
+						<div class="partner-pill">
+							<svg
+								width="14"
+								height="14"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+								<polyline points="22 4 12 14.01 9 11.01" /></svg
+							>Clinically Trained Caregivers
+						</div>
+						<div class="partner-pill">
+							<svg
+								width="14"
+								height="14"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<circle cx="12" cy="12" r="10" />
+								<polyline points="12 6 12 12 16 14" /></svg
+							>24/7 Family Support
+						</div>
+						<div class="partner-pill">
+							<svg
+								width="14"
+								height="14"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<rect
+									x="2"
+									y="7"
+									width="20"
+									height="14"
+									rx="2"
+								/>
+								<path
+									d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+								/></svg
+							>Hospital-Grade Equipment
+						</div>
+						<div class="partner-pill">
+							<svg
+								width="14"
+								height="14"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path d="M9 11l3 3L22 4" />
+								<path
+									d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+								/></svg
+							>Trauma-Informed Practice
+						</div>
+						<div class="partner-pill">
+							<svg
+								width="14"
+								height="14"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<path
+									d="M12 2 15 8.5 22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 7-.77L12 2z"
+								/></svg
+							>Cultural Respect &amp; Dignity
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+					<div class="section-head reveal">
+						<span class="eyebrow">Our Companies</span>
+						<h2>Two arms of care, one legacy</h2>
+						<p>
+							Legacy Care Africa operates two registered
+							subsidiaries — each focused, each independent, each
+							grounded in the same values of dignity, cultural
+							respect, and clinical excellence.
+						</p>
+					</div>
+					<div
+						class="grid"
+						style="
+							grid-template-columns: repeat(
+								auto-fit,
+								minmax(320px, 1fr)
+							);
+							gap: 2rem;
+						"
+					>
+						<article
+							class="card reveal"
+							style="overflow: hidden; padding: 0"
+						>
+							<div style="aspect-ratio: 16/10; overflow: hidden">
+								<img
+									src="./assets/photos/uzazi-card.jpg"
+									alt="Uzazi Wellness Care — maternal wellness"
+									style="
+										width: 100%;
+										height: 100%;
+										object-fit: cover;
+										display: block;
+									"
+								/>
+							</div>
+							<div style="padding: 2rem 2rem 2.25rem">
+								<span
+									class="eyebrow"
+									style="color: var(--color-accent-700)"
+									>Maternal &amp; Birth Care</span
+								>
+								<h3 style="margin-top: 0.4rem">
+									Uzazi Wellness Care
+								</h3>
+								<p
+									style="
+										color: var(--color-text-muted);
+										margin-top: 0.75rem;
+									"
+								>
+									From preconception through postpartum
+									recovery — gentle, expert in-home care for
+									every mother. Seven specialized service
+									areas including prenatal monitoring, birth
+									support, postpartum wellness, perinatal
+									mental health, and lactation guidance.
+								</p>
+								<div
+									style="
+										margin-top: 1.5rem;
+										display: flex;
+										gap: 0.85rem;
+										flex-wrap: wrap;
+									"
+								>
+									<a
+										href="./pages/our-companies.html#uzazi"
+										class="btn btn-primary"
+										>Learn About Uzazi</a
+									>
+									<a
+										href="https://uzaziwellnesscare.com"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="btn btn-outline"
+										>Visit Uzazi Site ↗</a
+									>
+								</div>
+							</div>
+						</article>
+						<article
+							class="card reveal"
+							style="overflow: hidden; padding: 0"
+						>
+							<div style="aspect-ratio: 16/10; overflow: hidden">
+								<img
+									src="./assets/photos/nyumbani-card.jpg"
+									alt="Nyumbani Support Solutions — in-home care"
+									style="
+										width: 100%;
+										height: 100%;
+										object-fit: cover;
+										display: block;
+									"
+								/>
+							</div>
+							<div style="padding: 2rem 2rem 2.25rem">
+								<span
+									class="eyebrow"
+									style="color: var(--color-accent-700)"
+									>Home &amp; Recovery Care</span
+								>
+								<h3 style="margin-top: 0.4rem">
+									Nyumbani Support Solutions
+								</h3>
+								<p
+									style="
+										color: var(--color-text-muted);
+										margin-top: 0.75rem;
+									"
+								>
+									Hospital-quality care delivered at home.
+									Seven services including elderly
+									companionship, post-discharge recovery,
+									skilled nursing, dementia and frailty
+									support, child &amp; family autism support,
+									palliative comfort care, and medical
+									equipment rental bundles.
+								</p>
+								<div
+									style="
+										margin-top: 1.5rem;
+										display: flex;
+										gap: 0.85rem;
+										flex-wrap: wrap;
+									"
+								>
+									<a
+										href="./pages/our-companies.html#nyumbani"
+										class="btn btn-primary"
+										>Learn About Nyumbani</a
+									>
+									<a
+										href="https://nyumbanisupportsolutions.com"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="btn btn-outline"
+										>Visit Nyumbani Site ↗</a
+									>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-bg-alt">
+				<div class="container">
+					<div class="section-head reveal">
+						<span class="eyebrow">Why Families Choose Us</span>
+						<h2>Purpose-driven from the ground up</h2>
+					</div>
+					<div
+						class="grid"
+						style="
+							grid-template-columns: repeat(
+								auto-fit,
+								minmax(260px, 1fr)
+							);
+							gap: 1.75rem;
+						"
+					>
+						<article class="card reveal">
+							<div class="card-icon">
+								<svg
+									width="22"
+									height="22"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path
+										d="M12 2 L14 8 L20 8 L15 12 L17 18 L12 14 L7 18 L9 12 L4 8 L10 8 Z"
+									/>
+								</svg>
+							</div>
+							<h3>African-Led, Community-Centered</h3>
+							<p>
+								Every service is designed by Africans who
+								understand the cultural, linguistic, and
+								structural realities of healthcare on the
+								continent. Not for us — by us.
+							</p>
+						</article>
+						<article class="card reveal">
+							<div class="card-icon">
+								<svg
+									width="22"
+									height="22"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path
+										d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+									/>
+								</svg>
+							</div>
+							<h3>Trauma-Informed Practice</h3>
+							<p>
+								Our caregivers are trained in empathic,
+								trauma-informed care — meeting each patient
+								exactly where they are, without rushing,
+								dismissing, or judging.
+							</p>
+						</article>
+						<article class="card reveal">
+							<div class="card-icon">
+								<svg
+									width="22"
+									height="22"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path d="M9 12l2 2 4-4" />
+									<path
+										d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"
+									/>
+								</svg>
+							</div>
+							<h3>Clinical Standards, Human Touch</h3>
+							<p>
+								Rigorous medical training combined with warmth.
+								You will never feel like a number — and you will
+								never be treated below the highest
+								evidence-based standard.
+							</p>
+						</article>
+						<article class="card reveal">
+							<div class="card-icon">
+								<svg
+									width="22"
+									height="22"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<circle cx="12" cy="12" r="10" />
+									<path
+										d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+									/>
+								</svg>
+							</div>
+							<h3>Pan-African Reach</h3>
+							<p>
+								Headquartered in Kenya with a USA office serving
+								the diaspora. Our growth roadmap takes us across
+								East Africa — Uganda, Tanzania, and Rwanda are
+								next.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+					<div class="section-head reveal">
+						<span class="eyebrow">What We Believe</span>
+						<h2>Healthcare built by Africans, for Africans</h2>
+						<p>
+							We do not import a foreign model and translate it.
+							We build from the cultural ground up — and bring the
+							best of modern medicine to meet it.
+						</p>
+					</div>
+					<div class="two-col-even" style="gap: 3rem">
+						<div class="reveal">
+							<h3 style="font-size: 1.5rem; margin-bottom: 1rem">
+								Our Mission
+							</h3>
+							<p>
+								To deliver compassionate, culturally grounded
+								healthcare that bridges traditional African
+								healing with evidence-based medical practice —
+								ensuring every family we serve feels seen,
+								honored, and well cared for.
+							</p>
+							<h3
+								style="
+									font-size: 1.5rem;
+									margin-top: 2.5rem;
+									margin-bottom: 1rem;
+								"
+							>
+								Our Vision
+							</h3>
+							<p>
+								A continent where geography, income, or cultural
+								identity never determines the quality of care a
+								family receives. Every mother births with
+								dignity. Every elder recovers at home with
+								comfort. Every family is supported in their
+								language and on their terms.
+							</p>
+						</div>
+						<div
+							class="hero-photo reveal"
+							style="aspect-ratio: 4/3"
+						>
+							<img
+								src="./assets/photos/family-moment.jpg"
+								alt="A Kenyan family receiving compassionate in-home care"
+								style="
+									width: 100%;
+									height: 100%;
+									object-fit: cover;
+									display: block;
+								"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-bg-alt">
+				<div class="container">
+					<div class="section-head reveal">
+						<span class="eyebrow">From Our Wellness Blog</span>
+						<h2>Words that nourish. Wisdom that heals.</h2>
+						<p>
+							Evidence-based wellness insights grounded in African
+							health traditions, written by our clinical team.
+						</p>
+					</div>
+					<div
+						class="grid"
+						style="
+							grid-template-columns: repeat(
+								auto-fit,
+								minmax(280px, 1fr)
+							);
+							gap: 1.75rem;
+						"
+					>
+						<article
+							class="card reveal"
+							style="padding: 0; overflow: hidden"
+						>
+							<div style="aspect-ratio: 16/10; overflow: hidden">
+								<img
+									src="./assets/photos/blog-fourth-trimester.jpg"
+									alt="A Kenyan new mother and her newborn during the fourth trimester"
+									style="
+										width: 100%;
+										height: 100%;
+										object-fit: cover;
+										display: block;
+									"
+								/>
+							</div>
+							<div style="padding: 1.5rem 1.75rem 2rem">
+								<span
+									class="eyebrow"
+									style="
+										color: var(--color-accent-700);
+										font-size: 0.78rem;
+									"
+									>Maternal Wellness · 6 min</span
+								>
+								<h3
+									style="
+										margin-top: 0.5rem;
+										font-size: 1.2rem;
+									"
+								>
+									The Sacred Fourth Trimester
+								</h3>
+								<p
+									style="
+										color: var(--color-text-muted);
+										font-size: 0.96rem;
+										margin-top: 0.75rem;
+									"
+								>
+									What African mothers deserve after birth —
+									and how Western postpartum models fall
+									short.
+								</p>
+								<a
+									href="./pages/blog/fourth-trimester.html"
+									class="card-link"
+									style="
+										margin-top: 1rem;
+										display: inline-block;
+									"
+									>Read article →</a
+								>
+							</div>
+						</article>
+						<article
+							class="card reveal"
+							style="padding: 0; overflow: hidden"
+						>
+							<div style="aspect-ratio: 16/10; overflow: hidden">
+								<img
+									src="./assets/photos/blog-home-care-myths.jpg"
+									alt="A caregiver supporting an elderly Kenyan gentleman at home"
+									style="
+										width: 100%;
+										height: 100%;
+										object-fit: cover;
+										display: block;
+									"
+								/>
+							</div>
+							<div style="padding: 1.5rem 1.75rem 2rem">
+								<span
+									class="eyebrow"
+									style="
+										color: var(--color-accent-700);
+										font-size: 0.78rem;
+									"
+									>Home Care · 5 min</span
+								>
+								<h3
+									style="
+										margin-top: 0.5rem;
+										font-size: 1.2rem;
+									"
+								>
+									5 Myths About Home Care
+								</h3>
+								<p
+									style="
+										color: var(--color-text-muted);
+										font-size: 0.96rem;
+										margin-top: 0.75rem;
+									"
+								>
+									And why those myths are holding African
+									families back from the care their elders
+									need.
+								</p>
+								<a
+									href="./pages/blog/home-care-myths.html"
+									class="card-link"
+									style="
+										margin-top: 1rem;
+										display: inline-block;
+									"
+									>Read article →</a
+								>
+							</div>
+						</article>
+						<article
+							class="card reveal"
+							style="padding: 0; overflow: hidden"
+						>
+							<div style="aspect-ratio: 16/10; overflow: hidden">
+								<img
+									src="./assets/photos/blog-pregnancy-nutrition.jpg"
+									alt="Traditional African pregnancy-nourishing foods on a wooden table"
+									style="
+										width: 100%;
+										height: 100%;
+										object-fit: cover;
+										display: block;
+									"
+								/>
+							</div>
+							<div style="padding: 1.5rem 1.75rem 2rem">
+								<span
+									class="eyebrow"
+									style="
+										color: var(--color-accent-700);
+										font-size: 0.78rem;
+									"
+									>Nutrition · 7 min</span
+								>
+								<h3
+									style="
+										margin-top: 0.5rem;
+										font-size: 1.2rem;
+									"
+								>
+									Pregnancy Nutrition, the African Way
+								</h3>
+								<p
+									style="
+										color: var(--color-text-muted);
+										font-size: 0.96rem;
+										margin-top: 0.75rem;
+									"
+								>
+									Sorghum, sukuma wiki, groundnuts, ghee — the
+									indigenous foods that have nourished mothers
+									for generations.
+								</p>
+								<a
+									href="./pages/blog/pregnancy-nutrition.html"
+									class="card-link"
+									style="
+										margin-top: 1rem;
+										display: inline-block;
+									"
+									>Read article →</a
+								>
+							</div>
+						</article>
+					</div>
+					<div class="center-text" style="margin-top: 2.5rem">
+						<a href="./pages/blog.html" class="btn btn-outline"
+							>All Articles</a
+						>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+					<div class="section-head reveal">
+						<span class="eyebrow"
+							>Stories From Families We Serve</span
+						>
+						<h2>Care that becomes a memory worth keeping</h2>
+					</div>
+					<div class="testimonials-grid reveal">
+						<blockquote class="quote">
+							<p>
+								"The midwife team at Uzazi stayed with me
+								through a long, difficult labor. They never
+								rushed me. They prayed with me. I felt like I
+								was surrounded by aunties who cared."
+							</p>
+							<div class="quote-meta">
+								<div class="quote-avatar">A</div>
+								<div>
+									<div class="quote-name">Amina K.</div>
+									<div class="quote-role">
+										Uzazi prenatal &amp; birth client ·
+										Nairobi
+									</div>
+								</div>
+							</div>
+						</blockquote>
+						<blockquote class="quote">
+							<p>
+								"When my father came home from surgery, we were
+								terrified. Nyumbani sent a nurse within 24
+								hours, delivered the hospital bed, and checked
+								in on us every single day. Truly outstanding."
+							</p>
+							<div class="quote-meta">
+								<div class="quote-avatar">J</div>
+								<div>
+									<div class="quote-name">James O.</div>
+									<div class="quote-role">
+										Nyumbani post-discharge family · Mombasa
+									</div>
+								</div>
+							</div>
+						</blockquote>
+						<blockquote class="quote">
+							<p>
+								"The Uzazi midwife spoke to my mother-in-law in
+								Swahili and explained everything to her. She
+								went from skeptical to my biggest ally. That
+								changed my entire birth experience."
+							</p>
+							<div class="quote-meta">
+								<div class="quote-avatar">Z</div>
+								<div>
+									<div class="quote-name">Zara H.</div>
+									<div class="quote-role">
+										Uzazi prenatal client · Mombasa
+									</div>
+								</div>
+							</div>
+						</blockquote>
+						<blockquote class="quote">
+							<p>
+								"Mama has Alzheimer's. Nyumbani's caregivers
+								don't just manage her care — they know her
+								favorite hymns, they speak Kikuyu with her, they
+								treat her like their own grandmother."
+							</p>
+							<div class="quote-meta">
+								<div class="quote-avatar">G</div>
+								<div>
+									<div class="quote-name">Grace N.</div>
+									<div class="quote-role">
+										Nyumbani dementia care family · Eldoret
+									</div>
+								</div>
+							</div>
+						</blockquote>
+					</div>
+					<p class="testimonial-disclaimer">
+						Composite stories representative of feedback we've
+						received from the families we serve. Names and locations
+						are illustrative; real client testimonials will be added
+						with full permission as our caseload grows.
+					</p>
+				</div>
+			</section>
+
+			<section class="cta-strip">
+				<div class="container center-text">
+					<span class="eyebrow" style="color: var(--color-accent)"
+						>Ready to Begin?</span
+					>
+					<h2
+						style="
+							color: #fff;
+							margin: 1rem auto 1.25rem;
+							max-width: 720px;
+						"
+					>
+						Your family deserves care that feels like home
+					</h2>
+					<p
+						style="
+							color: rgba(255, 255, 255, 0.85);
+							max-width: 620px;
+							margin: 0 auto 2rem;
+						"
+					>
+						Whether you are preparing for birth, coordinating care
+						for an aging parent, or simply seeking guidance — Legacy
+						Care Africa is here for you. Let us start a
+						conversation.
+					</p>
+					<div class="hero-cta" style="justify-content: center">
+						<a href="./pages/contact.html" class="btn btn-accent"
+							>Book a Consultation</a
+						>
+						<a
+							href="./pages/about.html"
+							class="btn btn-outline"
+							style="
+								color: #fff;
+								border-color: rgba(255, 255, 255, 0.4);
+							"
+							>Meet Our Team</a
+						>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<!-- ========== FOOTER ========== -->
-		<footer class="site-footer" role="contentinfo">
+		<footer class="site-footer">
 			<div class="container">
 				<div class="footer-grid">
-					<div class="footer-brand">
+					<div>
 						<a
-							href="index.html"
-							class="nav-logo"
-							style="margin-bottom: var(--space-3)"
+							href="./index.html"
+							class="footer-brand"
+							style="
+								display: inline-flex;
+								align-items: center;
+								gap: 0.75rem;
+							"
 						>
 							<img
-								src="./images/legacyLogo.jpeg"
-								alt="Legacy Care Africa logo: stylized leaf and cross"
-								width="100"
-								height="80px"
+								src="./assets/lca-emblem-cream.png"
+								alt="Legacy Care Africa emblem"
+								width="44"
+								height="44"
+								style="display: block; object-fit: contain"
 							/>
-							<span class="nav-logo-text">
-								<span class="nav-logo-name"
-									>Legacy Care Africa</span
-								>
-							</span>
+							<span>Legacy Care Africa</span>
 						</a>
-						<p>
+						<p class="footer-tag">
 							Pan-African healthcare rooted in community,
 							compassion, and the dignity every family deserves.
 						</p>
-						<div
-							class="footer-badges"
-							style="margin-top: var(--space-5)"
-						>
-							<span class="badge">🌍 Kenya Registered</span>
-							<span class="badge">✓ ISO Compliant</span>
+						<div class="footer-socials">
+							<a
+								href="https://www.instagram.com/nyumbanisupportsolutions/"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Follow Legacy Care Africa on Instagram"
+								><svg
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="1.8"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<rect
+										x="2"
+										y="2"
+										width="20"
+										height="20"
+										rx="5"
+									/>
+									<circle cx="12" cy="12" r="4" />
+									<circle
+										cx="17.5"
+										cy="6.5"
+										r="1"
+										fill="currentColor"
+									/></svg
+							></a>
+							<a
+								href="https://www.facebook.com/share/1D2sfNDFJA/"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Follow Legacy Care Africa on Facebook"
+								><svg viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M14 9h3V5h-3c-1.66 0-3 1.34-3 3v2H8v4h3v8h4v-8h3l1-4h-4V8.5c0-.28.22-.5.5-.5H14V9z"
+										stroke="none"
+									/></svg
+							></a>
 						</div>
 					</div>
 					<div>
-						<h3 class="footer-col-title">Company</h3>
-						<ul class="footer-links" role="list">
+						<h5>Company</h5>
+						<ul>
+							<li><a href="./pages/about.html">Our Story</a></li>
 							<li>
-								<a href="pages/about.html">About Legacy Care</a>
-							</li>
-							<li>
-								<a href="pages/about.html#team"
+								<a href="./pages/about.html#leadership"
 									>Leadership Team</a
 								>
 							</li>
 							<li>
-								<a href="pages/about.html#values">Our Values</a>
+								<a href="./pages/about.html#values"
+									>Our Values</a
+								>
 							</li>
-							<li><a href="pages/contact.html">Careers</a></li>
+							<li><a href="./pages/contact.html">Contact</a></li>
 						</ul>
 					</div>
 					<div>
-						<h3 class="footer-col-title">Our Companies</h3>
-						<ul class="footer-links" role="list">
+						<h5>Our Companies</h5>
+						<ul>
 							<li>
-								<a href="pages/uzazi.html"
+								<a href="./pages/our-companies.html#uzazi"
 									>Uzazi Wellness Care</a
 								>
 							</li>
 							<li>
-								<a href="pages/uzazi.html#services"
-									>Maternal Services</a
+								<a href="./pages/our-companies.html#nyumbani"
+									>Nyumbani Support Solutions</a
 								>
 							</li>
 							<li>
-								<a href="pages/nyumbani.html"
-									>Nyumbani Support</a
+								<a
+									href="https://uzaziwellnesscare.com"
+									target="_blank"
+									rel="noopener noreferrer"
+									>Uzazi Site ↗</a
 								>
 							</li>
 							<li>
-								<a href="pages/nyumbani.html#equipment"
-									>Equipment Rental</a
+								<a
+									href="https://nyumbanisupportsolutions.com"
+									target="_blank"
+									rel="noopener noreferrer"
+									>Nyumbani Site ↗</a
 								>
 							</li>
 						</ul>
 					</div>
 					<div>
-						<h3 class="footer-col-title">Connect</h3>
-						<ul class="footer-links" role="list">
-							<li><a href="pages/contact.html">Contact Us</a></li>
-							<li><a href="pages/blog.html">Wellness Blog</a></li>
+						<h5>Connect</h5>
+						<ul>
 							<li>
-								<a href="mailto:info@kusacapital.com"
-									>info@kusacapital.com</a
+								<a href="./pages/contact.html"
+									>Book a Consultation</a
 								>
 							</li>
 							<li>
-								<!-- <a href="tel:+254700000000">+254 700 000 000</a> -->
+								<a href="./pages/blog.html">Wellness Blog</a>
+							</li>
+							<li>
+								<a href="mailto:info@legacycareafrica.com"
+									>info@legacycareafrica.com</a
+								>
+							</li>
+							<li>
+								<a href="./pages/privacy.html"
+									>Privacy Policy</a
+								>
+							</li>
+							<li>
+								<a href="./pages/terms.html"
+									>Terms of Service</a
+								>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="footer-bottom">
+				<div class="footer-bar">
 					<span
-						>© 2026 Legacy Care Africa Group. All rights
-						reserved.</span
+						>© <span data-year>2026</span> Legacy Care Africa Group.
+						All rights reserved.</span
 					>
-					<div style="display: flex; gap: var(--space-4)">
-						<a
-							href="#"
-							style="
-								color: var(--color-text-faint);
-								font-size: var(--text-xs);
-							"
-							>Privacy Policy</a
-						>
-						<a
-							href="#"
-							style="
-								color: var(--color-text-faint);
-								font-size: var(--text-xs);
-							"
-							>Terms of Service</a
-						>
-					</div>
+					<span>Rooted in Heritage. Guided by Care.</span>
 				</div>
 			</div>
 		</footer>
 
-		<script src="js/main.js"></script>
+		<script src="./js/app.js"></script>
 	</body>
 </html>
