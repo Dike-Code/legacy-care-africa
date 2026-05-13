@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block common admin/private paths (none currently exist on static site)
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://legacycareafrica.com/sitemap.xml
