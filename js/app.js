@@ -80,8 +80,8 @@ window.legacyMlSubscribe = async function ({
 	onSuccess,
 	onError,
 }) {
-	const ACCOUNT_ID = "REPLACE_WITH_MAILERLITE_ACCOUNT_ID";
-	const endpoint = `https://assets.mailerlite.com/jsonp/${ACCOUNT_ID}/forms/${formId}/subscribe`;
+	const ACCOUNT_ID = "2342537";
+	const endpoint = `https://assets.mailerlite.com/jsonp/${2342537}/forms/${187443372288377995}/subscribe`;
 
 	// Honeypot check
 	if (data._gotcha) {
