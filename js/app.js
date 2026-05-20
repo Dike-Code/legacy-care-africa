@@ -181,8 +181,8 @@ document.addEventListener("DOMContentLoaded", () => {
 					}
 					if (submitBtn) {
 						submitBtn.disabled = false;
-						submitBtn.textContent =
-							submitBtn.dataset.origLabel || "Submit";
+						submitBtn.textContent = m;
+						submitBtn.dataset.origLabel || "Submit";
 					}
 				},
 			});
